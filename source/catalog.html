@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <a class="page-header__logo"><img src="img/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип города Седона"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="#">Html Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Фото и видео Седоны</h1>
+
+      <div class="welcome-group">
+        <img class="welcome-group__title" src="img/SEDONA.svg" width="229" height="39" alt="Город Седона">
+      </div>
+
+      <section class="photo-video">
+        <div class="photo-video__wrapper">
+          <h2 class="visually-hidden">Подборка самых популярных фото</h2>
+          <header class="photo-video__header">
+            <h3 class="photo-video__subtitle">Фото и видео</h3>
+            <p class="photo-video__intro">Не можете решиться на путешествие из за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </header>
+        </div>
+
+        <ul class="photo-video photo">
+          <li class="photo__item ">
+            <figure>
+              <img src="img/photo-1-mobile.jpg.jpg" alt="Дорога и горы на фоне заката">
+              <figcaption class="photo__caption">Неродные просторы</figcaption>
+            </figure>
+            <p class="photo__item-author">Автор фото: Борис</p>
+            <p class="photo__item-likes">1350</p>
+          </li>
+          <li class="photo__item">
+            <figure>
+              <img src="img/photo-2-mobile.jpg.jpg" alt="Цветы">
+              <figcaption class="photo__caption">Местная растительность</figcaption>
+            </figure>
+            <p class="photo__item-author">Автор фото: Сергей</p>
+            <p class="photo__item-likes">143</p>
+          </li>
+          <li class="photo__item">
+            <figure>
+              <img src="img/photo-3-mobile.jpg.jpg" alt="Серпантин в окружении густого леса">
+              <figcaption class="photo__caption">Дорога на север</figcaption>
+            </figure>
+            <p class="photo__item-author">Автор фото: Петр</p>
+            <p class="photo__item-likes">96</p>
+          </li>
+          <li class="photo__item">
+            <figure>
+              <img src="img/photo-4-desktop 1.jpg" alt="Узкий каменный мост">
+              <figcaption class="photo__caption">Мост Дьявола</figcaption>
+            </figure>
+            <p class="photo__item-author">Автор фото: Антон</p>
+            <p class="photo__item-likes">254</p>
+          </li>
+
+          <div class="photo-video video">
+            <h2 class="visually-hidden">Видеопрезентация</h2>
+            <h3 class="video__subtitle">Вы еще сомневаетесь?</h3>
+            <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <video width="320" height="200" controls="controls" poster="img/video-mobile.jpg.jpg">
+              <source src="#">
+            </video>
+          </div>
+      </section>
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__contacts">
+            <h2 class="visually-hidden">Контактная информация</h2>
+            <a class="page-footer__contacts-hashtag" href="#" aria-label="hashtag visitsedona">#VISITSEDONA</a>
+          </div>
+          <div class="page-footer__social social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <h2 class="visually-hidden">Разработано Html Academy</h2>
+            <p class="copyright__text">Разработано &nbsp;</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано HTML Academy">HTML Academy</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
