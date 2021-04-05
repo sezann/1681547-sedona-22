@@ -1,0 +1,27 @@
+.hotel-search {
+  padding: 30px 25px;
+}
+.hotel-search__title {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+}
+.hotel-search__intro {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.hotel-search__button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  border: $lightblue;
+  color: $basic-white;
+  background-color: $lightblue;
+  padding: 15px 32px;
+  margin-bottom: 50px;
+}
+

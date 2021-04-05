@@ -1,0 +1,20 @@
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $basic-black;
+  text-transform: uppercase;
+  background-color: $basic-white;
+  background-repeat: no-repeat;
+
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
