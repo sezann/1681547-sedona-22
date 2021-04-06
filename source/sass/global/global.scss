@@ -1,3 +1,15 @@
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $basic-black;
+  text-transform: uppercase;
+  background-color: $basic-white;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -7,6 +19,9 @@ a {
 }
 li {
   list-style: none;
+}
+fieldset {
+  border: none;
 }
 .visually-hidden {
   position: absolute;

@@ -9,26 +9,27 @@
   color: $text-color;
   background-color: $advantages-gray;
   margin: 0;
+    &--city {
+    color: $basic-white;
+    background-color: $lightblue;
+    padding: 40px 10px;
+  }
+    &--bridge {
+    color: $basic-white;
+    background-color: $lightblue;
+    padding: 35px 15px;
+  }
+    &--square {
+    padding: 26px;
+  }
+    &--road {
+    padding: 26px;
+  }
+    &--tourists {
+    padding: 26px;
+  }
 }
-.advantages__item--city {
-  color: $basic-white;
-  background-color: $lightblue;
-  padding: 40px 10px;
-}
-.advantages__item--bridge {
-  color: $basic-white;
-  background-color: $lightblue;
-  padding: 35px 15px;
-}
-.advantages__item--square {
-  padding: 26px;
-}
-.advantages__item--road {
-  padding: 26px;
-}
-.advantages__item--tourists {
-  padding: 26px;
-}
+
 .advantages__image {
   display: block;
 }

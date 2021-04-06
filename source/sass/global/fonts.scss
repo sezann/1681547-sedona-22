@@ -4,8 +4,8 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("/source/fonts/ptsans.woff2") format("woff2")
-    url("/source/fonts/ptsans.woff") format("woff");
+    url("../fonts/ptsans.woff2") format("woff2")
+    url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -14,6 +14,6 @@
   font-style: normal;
   font-display: swap;
   src:
-    url("/source/fonts/PTSans-Bold.woff2") format("woff2")
-    url("/source/fonts/PTSans-Bold.woff") format("woff");
+    url("../fonts/ptsans-bold.woff2") format("woff2")
+    url("../fonts/ptsans-bold.woff") format("woff");
 }

@@ -25,7 +25,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Оставьте свой отзыв о гостиницах и достопримечательностях Седоны</h1>
 
-      <div class="welcome-group">
+      <div class="welcome-group welcome-group--form">
         <img class="welcome-group__title" src="img/SEDONA.svg" width="229" height="39" alt="Город Седона">
       </div>
 
@@ -41,39 +41,46 @@
         <div class="feedback__wrapper">
           <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="form__name">
-              <h3 class="form__name-subtitle">Представьтесь</h3>
+              <h3 class="form__subtitle">Представьтесь:</h3>
               <p>
-                <label for="name-field">Имя*:</label>
-                <input class="form__first-name" id="name-field" type="text" name="name" placeholder="Петр">
+                <label class="form__label">Имя*:
+                  <input class="form__input" type="text" name="name" placeholder="Петр">
+                </label>
               </p>
               <p>
-                <label for="surname-field">Фамилия*:</label>
-                <input class="form__surname" id="surname-field" type="text" name="surname" placeholder="Иванов">
+                <label class="form__label">Фамилия*:
+                  <input class="form__input" type="text" name="surname" placeholder="Иванов">
+                </label>
               </p>
               <p>
-                <label for="patronymic-field">Отчество:</label>
-                <input class="form__patronymic" id="patronymic-field" type="text" name="patronymic" placeholder="Александрович">
+                <label>Отчество:
+                  <input class="form__input" type="text" name="patronymic" placeholder="Александрович">
+                </label>
               </p>
             </fieldset>
 
             <fieldset class="form__contacts">
-              <h3 class="form__contacts-subtitle">Контактная информация:</h3>
+              <h3 class="form__subtitle">Контактная информация:</h3>
               <p>
-                <label for="phone-field">Контактный телефон*:</label>
-                <input class="form__phone" id="phone-field" type="tel" name="phone" placeholder="Введите телефон">
+                <label>Контактный телефон*:
+                  <input class="form__input" type="tel" name="phone" placeholder="Введите телефон">
+                </label>
               </p>
               <p>
-                <label for="email-field">Электронная почта*:</label>
-                <input class="form__email" id="email-field" type="email" name="email" placeholder="Введите e-mail">
+                <label>Электронная почта*:</label>
+                  <input class="form__input" type="email" name="email" placeholder="Введите e-mail">
+                </label>
               </p>
             </fieldset>
 
             <fieldset class="form__impression">
-              <h3 class="form__impression-subtitle">Ваше общее впечатление:</h3>
+              <h3 class="form__subtitle">Ваше общее впечатление:</h3>
               <ul class="form__impression-list">
                 <li class="form__impression-item">
-                  <input class="form__impression-input" id="positive-impression" type="radio" name="impression" value="positive" checked>
-                  <label for="positive-impression">Скорее положительное</label>
+                  <label>
+                    <input class="form__impression-input" type="radio" name="impression" value="positive" checked>
+                    Скорее положительное
+                  </label>
                 </li>
                 <li class="form__impression-item">
                   <input class="form__impression-input" id="negative-impression" type="radio" name="impression" value="negative">
@@ -87,7 +94,7 @@
             </fieldset>
 
             <fieldset class="form__sights">
-              <h3 class="form__sights-subtitle">Посещенные достопримечательности:</h3>
+              <h3 class="form__subtitle">Посещенные достопримечательности:</h3>
               <ul class="form__sights-list">
                 <li class="form__sights-item">
                   <input class="form__sights-input" id="bridge-of-devil" type="checkbox" name="bridge" checked>
