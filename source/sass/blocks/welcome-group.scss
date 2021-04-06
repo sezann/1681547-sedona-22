@@ -1,0 +1,10 @@
+.welcome-group {
+  background-color: $lightblue;
+  text-align: center;
+  background-image: url("../img/back-mobile.jpg.jpg");
+  padding: 85px 20px;
+  position: relative;
+    &--form {
+      background-image: url("../img/back-desktop.jpg.jpg");
+    }
+}

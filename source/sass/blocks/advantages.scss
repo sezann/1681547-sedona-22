@@ -1,0 +1,35 @@
+.advantages__list {
+  padding: 0;
+  margin: 0;
+}
+.advantages__item {
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: $text-color;
+  background-color: $advantages-gray;
+  margin: 0;
+    &--city {
+    color: $basic-white;
+    background-color: $lightblue;
+    padding: 40px 10px;
+  }
+    &--bridge {
+    color: $basic-white;
+    background-color: $lightblue;
+    padding: 35px 15px;
+  }
+    &--square {
+    padding: 26px;
+  }
+    &--road {
+    padding: 26px;
+  }
+    &--tourists {
+    padding: 26px;
+  }
+}
+
+.advantages__image {
+  display: block;
+}
