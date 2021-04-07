@@ -1,4 +1,5 @@
 .advantages__list {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -9,6 +10,7 @@
   color: $text-color;
   background-color: $advantages-gray;
   margin: 0;
+  padding: 26px;
     &--city {
     color: $basic-white;
     background-color: $lightblue;
@@ -18,15 +20,6 @@
     color: $basic-white;
     background-color: $lightblue;
     padding: 35px 15px;
-  }
-    &--square {
-    padding: 26px;
-  }
-    &--road {
-    padding: 26px;
-  }
-    &--tourists {
-    padding: 26px;
   }
 }
 

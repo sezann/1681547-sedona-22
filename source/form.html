@@ -40,7 +40,7 @@
       <section class="feedback">
         <div class="feedback__wrapper">
           <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="form__name">
+            <fieldset class="form__field">
               <h3 class="form__subtitle">Представьтесь:</h3>
               <p>
                 <label class="form__label">Имя*:
@@ -53,13 +53,13 @@
                 </label>
               </p>
               <p>
-                <label>Отчество:
+                <label class="form__label">Отчество:
                   <input class="form__input" type="text" name="patronymic" placeholder="Александрович">
                 </label>
               </p>
             </fieldset>
 
-            <fieldset class="form__contacts">
+            <fieldset class="form__field">
               <h3 class="form__subtitle">Контактная информация:</h3>
               <p>
                 <label>Контактный телефон*:
@@ -73,53 +73,65 @@
               </p>
             </fieldset>
 
-            <fieldset class="form__impression">
+            <fieldset class="form__field">
               <h3 class="form__subtitle">Ваше общее впечатление:</h3>
-              <ul class="form__impression-list">
-                <li class="form__impression-item">
+              <ul class="form__list">
+                <li class="form__item">
                   <label>
-                    <input class="form__impression-input" type="radio" name="impression" value="positive" checked>
+                    <input class="form__input-impression" type="radio" name="impression" value="positive" checked>
                     Скорее положительное
                   </label>
                 </li>
-                <li class="form__impression-item">
-                  <input class="form__impression-input" id="negative-impression" type="radio" name="impression" value="negative">
-                  <label for="negative-impression">Скорее отрицательное</label>
+                <li class="form__item">
+                  <label>
+                    <input class="form__input-impression" type="radio" name="impression" value="negative">
+                    Скорее отрицательное
+                  </label>
                 </li>
-                <li class="form__impression-item">
-                  <input class="form__impression-input" id="unsure-impression" type="radio" name="impression" value="unsure">
-                  <label for="unsure-impression">Затрудняюсь ответить</label>
+                <li class="form__item">
+                  <label>
+                    <input class="form__input-impression" type="radio" name="impression" value="unsure">
+                    Затрудняюсь ответить
+                  </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__sights">
+            <fieldset class="form__field">
               <h3 class="form__subtitle">Посещенные достопримечательности:</h3>
-              <ul class="form__sights-list">
-                <li class="form__sights-item">
-                  <input class="form__sights-input" id="bridge-of-devil" type="checkbox" name="bridge" checked>
-                  <label for="bridge-of-devil">Мост Дьявола</label>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label>
+                    <input class="form__input-sights" type="checkbox" name="bridge" checked>
+                    Мост Дьявола
+                  </label>
                 </li>
-                <li class="form__sights-item">
-                  <input class="form__sights-input" id="mountain-toller" type="checkbox" name="mountain" checked>
-                  <label for="mountain-toller">Гора-Колокол</label>
+                <li class="form__item">
+                  <label>
+                    <input class="form__input-sights" type="checkbox" name="mountain" checked>
+                    Гора-Колокол
+                  </label>
                 </li>
-                <li class="form__sights-item">
-                  <input class="form__sights-input" id="slide-park" type="checkbox" name="park" checked>
-                  <label for="slide-park">Слайд-парк</label>
+                <li class="form__item">
+                  <label>
+                    <input class="form__input-sights" type="checkbox" name="park" checked>
+                    Слайд-парк
+                  </label>
                 </li>
-                <li class="form__sights-item">
-                  <input class="form__sights-input" id="red-rock" type="checkbox" name="rock">
-                  <label for="red-rock">Красные скалы</label>
+                <li class="form__item">
+                  <label>
+                    <input class="form__input-sights" type="checkbox" name="rock">
+                    Красные скалы
+                  </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__emotions">
-              <label for="describe-emotions">Опишите свои эмоции:</label>
-              <textarea class="form__emotions-input" id="describe-emotions" type="text" rows="5" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            <fieldset class="form__field">
+              <h3 class="form__subtitle">Опишите свои эмоции:</h3>
+              <textarea class="form__input--emotions" type="text" rows="5" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button class="form__button" type="submit">Отправить отзыв</button>
+            <button class="form button" type="submit">Отправить отзыв</button>
           </form>
         </div>
       </section>

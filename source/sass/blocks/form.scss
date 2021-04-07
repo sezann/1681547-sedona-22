@@ -1,7 +1,23 @@
+.form__field {
+  border: none;
+  padding: 20px 0;
+}
 .form__subtitle {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+}
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.form__item {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 45px;
 }
 .form__input {
   font-family: inherit;
@@ -10,11 +26,24 @@
   font-weight: bold;
   color: $basic-black;
 
-  width: 100%;
   height: 58px;
   background-color: $form-gray;
   border: 2px solid $form-gray;
 
+  width: 100%;
   margin-top: 15px;
   padding-left: 20px;
+}
+.form__input--emotions {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $basic-black;
+
+  width: 272px;
+  background-color: $form-gray;
+  border: 2px solid $form-gray;
+
+  padding: 10px 20px;
 }
