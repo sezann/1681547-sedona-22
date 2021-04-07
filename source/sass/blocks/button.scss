@@ -1,0 +1,16 @@
+.button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $basic-white;
+  background-color: $lightblue;
+  border: $lightblue;
+
+  width: 100%;
+  padding: 15px;
+  margin: 50px 0;
+}
