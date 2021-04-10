@@ -1,9 +1,31 @@
 .recommendations__list {
   font-size: 15px;
   line-height: 21px;
-  text-align: left;
-  list-style: none;
   background-color: $basic-white;
-  padding: 25px 0 25px 70px;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .recommendations__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .recommendations__list {
+    display: flex;
+    height: 260px;
+  }
+  .recommendations__item {
+    padding: 60px 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recommendations__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+

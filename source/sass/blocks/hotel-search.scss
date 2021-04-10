@@ -13,3 +13,17 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .hotel-search__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-search__wrapper {
+    width: 1200px;
+    margin: o auto;
+  }
+}
