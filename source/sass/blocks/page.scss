@@ -1,3 +1,9 @@
 .page {
-  width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.page__body {
+  min-height: 100%;
+  margin: 0;
 }

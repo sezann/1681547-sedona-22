@@ -1,16 +1,32 @@
-.intro {
-  padding: 10px 18px;
+.intro__image {
+  text-align: center;
+  background-color: $lightblue;
+  background-image: url("../img/1back-desktop.jpg");
+  background-size: cover;
+  padding: 85px 20px;
 }
 .intro__subtitle {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 35px 0;
+
 }
 .intro__text {
   font-size: 14px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
+  margin-bottom: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .intro__subtitle {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .intro__image {
+    height: 518px;
+  }
+}
+
+

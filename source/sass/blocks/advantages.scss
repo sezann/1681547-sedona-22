@@ -8,24 +8,44 @@
   line-height: 21px;
   text-align: center;
   color: $text-color;
-  background-color: $advantages-gray;
   margin: 0;
-  padding: 26px;
     &--city {
-    color: $basic-white;
-    background-color: $lightblue;
-    padding: 40px 10px;
+      color: $basic-white;
+      background-color: $lightblue;
   }
     &--bridge {
-    color: $basic-white;
-    background-color: $lightblue;
-    padding: 35px 15px;
+      color: $basic-white;
+      background-color: $lightblue;
   }
-    &--recommendations {
-      padding: 0;
-    }
 }
-
-.advantages__image {
+.advantages__image-city img {
   display: block;
 }
+.advantages__image-bridge img {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__subtitle {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .advantages__item--city {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .advantages__item--bridge {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .advantages__image-bridge {
+    order: 0;
+  }
+  .advantages__inner {
+    order: 1;
+  }
+}
+
+
+
+
