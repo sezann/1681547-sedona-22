@@ -17,31 +17,18 @@
       color: $basic-white;
       background-color: $lightblue;
   }
-    &--recommendations {
-      padding: 0;
-      margin: 0;
-  }
-    &--box {
-      background-color: $advantages-gray;
-      padding: 26px;
-  }
 }
-.advantages__image {
+.advantages__image-city img {
   display: block;
-  margin: 0;
+}
+.advantages__image-bridge img {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__wrapper {
-    width: 768px;
-    margin: 0 auto;
-  }
   .advantages__subtitle {
     font-size: 21px;
     line-height: 26px;
-  }
-  .advantages__item {
-    min-height: 256px;
   }
   .advantages__item--city {
     display: grid;
@@ -54,19 +41,10 @@
   .advantages__image-bridge {
     order: 0;
   }
-  .advantages__item--box {
-    display: flex;
-    justify-content: space-between;
+  .advantages__inner {
+    order: 1;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .advantages__wrapper {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-
 
 
 

@@ -1,25 +1,22 @@
-.intro__wrapper {
-  margin: 0 auto;
-}
-
-.intro__image img {
+.intro__image {
   text-align: center;
   background-color: $lightblue;
-  background-image: url("../img/back-mobile.jpg.jpg");
+  background-image: url("../img/1back-desktop.jpg");
+  background-size: cover;
   padding: 85px 20px;
 }
 .intro__subtitle {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 35px 0;
+
 }
 .intro__text {
   font-size: 14px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,10 +24,8 @@
     font-size: 21px;
     line-height: 26px;
   }
-  .intro__image img {
-    min-height: 350px;
-    background-repeat: no-repeat;
-    padding: 77px 37px 90px 37px;
+  .intro__image {
+    height: 518px;
   }
 }
 

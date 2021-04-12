@@ -1,18 +1,4 @@
-.page-header {
-  display: flex;
-  flex-direction: column;
-}
-.page-header__logo-desktop {
-  display: none;
-}
 
-@media (min-width: $desktop-width)  {
-  .page-header__logo-mobile {
-    display: none;
-  }
-  .page-header__logo-desktop {
-    display: block;
-  }
-}
+
 
 

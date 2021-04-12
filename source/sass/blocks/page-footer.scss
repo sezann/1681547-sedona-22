@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 25px 60px;
+  text-align: center;
 }
 .page-footer__contacts-hashtag {
   font-size: 21px;
@@ -15,11 +15,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 768px;
-    margin: 0 auto;
+  .page-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
