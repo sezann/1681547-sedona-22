@@ -1,0 +1,11 @@
+@media (min-width: $tablet-width) {
+  .feedback {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding: 0 120px;
+  }
+}

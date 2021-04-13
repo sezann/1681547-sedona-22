@@ -2,15 +2,15 @@
   border: none;
   padding: 20px 0;
 }
-.form__subtitle {
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-}
 .form__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.form__subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
 }
 .form__item {
   font-size: 18px;
@@ -25,25 +25,53 @@
   line-height: 26px;
   font-weight: bold;
   color: $basic-black;
-
-  height: 58px;
   background-color: $form-gray;
   border: 2px solid $form-gray;
-
+  height: 58px;
   width: 100%;
   margin-top: 15px;
   padding-left: 20px;
+    &--emotions {
+      width: 272px;
+      padding: 20px 0;
+    }
 }
-.form__input-emotions {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: $basic-black;
+.form__legend {
+  display: none;
+}
 
-  width: 272px;
-  background-color: $form-gray;
-  border: 2px solid $form-gray;
+@media (min-width: $tablet-width) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+  }
+  .form__field--info {
+    grid-column: 1 / -1;
+  }
+  .form__field--impression {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .form__field--sights {
+    grid-column: 1 / -1;
+  }
+  .form__list--sights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form__field--emotions {
+    grid-column: 1 / -1;
+  }
+  .form__legend {
+    display: block;
+    justify-self: end;
+  }
+}
 
-  padding: 10px 20px;
+@media (min-width: $desktop-width) {
+  .form__list--sights {
+    display: flex;
+    justify-content: space-between;
+  }
 }
