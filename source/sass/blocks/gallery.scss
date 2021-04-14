@@ -18,4 +18,31 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .gallery__image-sunset {
+    width: 100%;
+  }
+  .gallery__image-flowers {
+    width: 324px;
+  }
+  .gallery__image-road {
+    width: 324px;
+  }
+  .gallery__image-bridge {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__image-sunset {
+    width: 100%;
+  }
+  .gallery__image-flowers {
+    width: 400px;
+  }
+  .gallery__image-road {
+    width: 400px;
+  }
+  .gallery__image-bridge {
+    width: 400px;
+  }
 }

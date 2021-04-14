@@ -7,3 +7,18 @@
   margin: 0;
   margin-bottom: 35px;
 }
+.video__poster {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .video__poster {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__poster {
+    width: 800px;
+  }
+}
