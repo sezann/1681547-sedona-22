@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
@@ -12,12 +13,12 @@
         <a class="page-header__logo"><img src="img/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип города Седона"></a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list">
-              <li><a class="main-nav__link" href="index.html">Главная</a></li>
-              <li><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
-              <li><a class="main-nav__link" href="#">Форма отзыва</a></li>
-              <li><a class="main-nav__link" href="#">Html Academy</a></li>
-            </ul>
+          <ul class="main-nav__list">
+            <li><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+            <li><a class="main-nav__link" href="#">Форма отзыва</a></li>
+            <li><a class="main-nav__link" href="#">Html Academy</a></li>
+          </ul>
         </nav>
       </header>
 
@@ -37,25 +38,26 @@
           <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="form__field">
               <h3 class="form__subtitle">Представьтесь:</h3>
-              <p>
+              <p class="form__text">
                 <label class="form__label">Имя*:
                   <input class="form__input" type="text" name="name" placeholder="Петр">
                 </label>
               </p>
-              <p>
+              <p class="form__text">
                 <label class="form__label">Фамилия*:
                   <input class="form__input" type="text" name="surname" placeholder="Иванов">
                 </label>
               </p>
-              <p>
+              <p class="form__text">
                 <label class="form__label">Отчество:
                   <input class="form__input" type="text" name="patronymic" placeholder="Александрович">
                 </label>
               </p>
             </fieldset>
 
-            <fieldset class="form__field">
+            <fieldset class="form__field form__field--info ">
               <h3 class="form__subtitle">Контактная информация:</h3>
+              <div class="form__field-box">
               <p>
                 <label>Контактный телефон*:
                   <input class="form__input" type="tel" name="phone" placeholder="Введите телефон">
@@ -66,67 +68,69 @@
                   <input class="form__input" type="email" name="email" placeholder="Введите e-mail">
                 </label>
               </p>
+              </div>
             </fieldset>
 
-            <fieldset class="form__field">
+            <fieldset class="form__field form__field--impression">
               <h3 class="form__subtitle">Ваше общее впечатление:</h3>
               <ul class="form__list">
                 <li class="form__item">
                   <label>
-                    <input class="form__input-impression" type="radio" name="impression" value="positive" checked>
+                    <input class="form__input--impression" type="radio" name="impression" value="positive" checked>
                     Скорее положительное
                   </label>
                 </li>
                 <li class="form__item">
                   <label>
-                    <input class="form__input-impression" type="radio" name="impression" value="negative">
+                    <input class="form__input--impression" type="radio" name="impression" value="negative">
                     Скорее отрицательное
                   </label>
                 </li>
                 <li class="form__item">
                   <label>
-                    <input class="form__input-impression" type="radio" name="impression" value="unsure">
+                    <input class="form__input--impression" type="radio" name="impression" value="unsure">
                     Затрудняюсь ответить
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__field">
+            <fieldset class="form__field form__field--sights">
               <h3 class="form__subtitle">Посещенные достопримечательности:</h3>
-              <ul class="form__list">
+              <ul class="form__list form__list--sights">
                 <li class="form__item">
                   <label>
-                    <input class="form__input-sights" type="checkbox" name="bridge" checked>
+                    <input class="form__input--sights" type="checkbox" name="bridge" checked>
                     Мост Дьявола
                   </label>
                 </li>
                 <li class="form__item">
                   <label>
-                    <input class="form__input-sights" type="checkbox" name="mountain" checked>
+                    <input class="form__input--sights" type="checkbox" name="mountain" checked>
                     Гора-Колокол
                   </label>
                 </li>
                 <li class="form__item">
                   <label>
-                    <input class="form__input-sights" type="checkbox" name="park" checked>
+                    <input class="form__input--sights" type="checkbox" name="park" checked>
                     Слайд-парк
                   </label>
                 </li>
                 <li class="form__item">
                   <label>
-                    <input class="form__input-sights" type="checkbox" name="rock">
+                    <input class="form__input--sights" type="checkbox" name="rock">
                     Красные скалы
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__field">
+            <fieldset class="form__field form__field--emotions">
               <h3 class="form__subtitle">Опишите свои эмоции:</h3>
-              <textarea class="form__input-emotions" type="text" rows="5" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__input" type="text" rows="5" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button class="form button" type="submit">Отправить отзыв</button>
+            <button class="form__button button" type="submit">Отправить отзыв</button>
+            <p class="form__legend">* &mdash; обязательные поля</p>
           </form>
         </section>
       </main>
