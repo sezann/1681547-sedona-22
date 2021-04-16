@@ -3,6 +3,8 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: normal;
+  width: auto;
+  min-height: 55px;
   background-color: $lightblue;
 }
 .main-nav__list {
@@ -13,6 +15,35 @@
 .main-nav__link {
   color: $basic-white;
 }
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 56px;
+  height: 55px;
+  background-color: $lightblue;
+  cursor: pointer;
+  border: none;
+}
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+}
+
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
