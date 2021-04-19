@@ -1,10 +1,13 @@
 .page-header {
   position: relative;
+  height: 56px;
+  color: $basic-black;
   background-color: $basic-white;
 }
 .page-header__logo img {
-  width: 101px;
-  height: 84px;
+
+  /*width: 101px;
+  height: 84px;*/
 
   position: absolute;
   left: 50%;
@@ -13,9 +16,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
-    width: 187px;
-    height: 96px;
+  .page-header__logo img {
+    background-image: url("../img/Vector.svg");
+    background-size: 187px 96px;
+    background-position-x: center;
   }
 }
 

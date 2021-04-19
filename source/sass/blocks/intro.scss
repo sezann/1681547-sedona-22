@@ -21,7 +21,11 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+  padding: 0 18px;
   margin-bottom: 35px;
+}
+.intro__subtitle br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,6 +37,9 @@
   .intro__subtitle {
     font-size: 21px;
     line-height: 26px;
+  }
+  .intro__subtitle br {
+    display: block;
   }
 }
 @media (min-width: $desktop-width) {
