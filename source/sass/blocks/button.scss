@@ -17,6 +17,11 @@
   .button {
     display: grid;
     grid-template-columns: 1fr;
-    width: 458px;
+    width: 306px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .button {
+    width: 476px;
   }
 }

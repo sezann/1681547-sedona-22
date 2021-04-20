@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    padding: 36px 45px;
+    padding: 36px 60px;
   }
   .page-footer__contacts {
     justify-self: start;
@@ -33,7 +33,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 36px 110px;
+    padding: 36px 120px;
   }
   .copyright__link {
     margin-left: auto;

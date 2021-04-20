@@ -6,6 +6,7 @@
   width: auto;
   min-height: 55px;
   background-color: $basic-white;
+  padding-bottom: 60px;
 }
 .main-nav__list {
   margin: 0;
@@ -15,7 +16,7 @@
 
 @media (max-width: $mobile-only) {
   .main-nav li {
-    height: 55px;
+    min-height: 56px;
     text-align: center;
     border-top: 1px solid $lightblue-hover;
     border-bottom: 1px solid $lightblue-focus;
@@ -51,6 +52,7 @@
   .main-nav--opened .main-nav__list {
     display: block;
     background-color: $lightblue;
+    box-shadow: 0px 4px 4px rgba(68, 47, 47, 0.20);
   }
   .main-nav--opened .main-nav__toggle {
     top: 0;
@@ -76,6 +78,12 @@
     &::after {
       transform: rotate(-45deg);
     }
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__list {
+    display: block;
   }
 }
 
