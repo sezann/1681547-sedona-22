@@ -27,6 +27,9 @@
 .intro__subtitle br {
   display: none;
 }
+.intro__text br {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .intro__image {
@@ -39,6 +42,9 @@
     line-height: 26px;
   }
   .intro__subtitle br {
+    display: block;
+  }
+  .intro__text br {
     display: block;
   }
 }
