@@ -23,12 +23,26 @@
 .video__control {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 280px;
   min-height: 66px;
   background-color: $form-gray;
   padding: 0 25px;
+}
+.video__button {
+  border: $form-gray;
+  outline: none;
+  cursor: pointer;
+}
+.video__button path {
+  fill: $gray-video;
+}
+.video__button:hover path {
+  fill: $basic-black;
+}
+.video__button:active path {
+  fill: $basic-black;
+  opacity: 30%;
 }
 .video__scale {
   position: absolute;
@@ -57,10 +71,10 @@
     transform: translateX(-25px) translateY(-55px);
     width: 280px;
     height: 45px;
-    background-color: $basic-black;
-    opacity: 50%;
+    background-color: $basic-gray;
+    opacity: 60%;
   }
-  .video__play-svg svg {
+  svg.video__play-svg {
     margin-left: 110px;
   }
 }
@@ -79,9 +93,10 @@
   .video__control {
     position: absolute;
     transform: translateY(566px);
+    justify-content: space-between;
     width: 648px;
-    background-color: $basic-black;
-    opacity: 50%;
+    background-color: $basic-gray;
+    opacity: 60%;
   }
   .video__scale {
     position: relative;
@@ -90,7 +105,7 @@
     height: 3px;
     background-color: $basic-white;
     opacity: 50%;
-    cursor: pointer;
+
   }
   .video__toggle {
     position: absolute;
@@ -100,10 +115,23 @@
     padding: 0;
     border-radius: 50%;
     background-color: $basic-white;
-    cursor: pointer;
+
   }
   .video__control path {
     fill: $basic-white;
+  }
+  .video__button {
+    background-color: $basic-gray;
+    border: $basic-gray;
+    opacity: 60%;
+  }
+  .video__button:hover path {
+    fill: $basic-white;
+    opacity: 60%;
+  }
+  .video__button:active path {
+    fill: $basic-white;
+    opacity: 30%;
   }
 }
 
