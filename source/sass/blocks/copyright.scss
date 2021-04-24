@@ -1,0 +1,7 @@
+.copyright__link:hover path {
+  fill: $lightblue;
+}
+.copyright__link:active path {
+  fill: $basic-black;
+  opacity: 30%;
+}

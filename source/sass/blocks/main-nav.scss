@@ -21,8 +21,21 @@
     border-top: 1px solid $lightblue-hover;
     border-bottom: 1px solid $lightblue-focus;
   }
-  .main-nav__link {
+  .main-nav__item a {
     color: $basic-white;
+  }
+  .main-nav__item:hover {
+    background-color: $lightblue-hover;
+  }
+  .main-nav__item:active {
+    background-color: $lightblue-focus;
+  }
+  .main-nav__item:active a {
+    opacity: 30%;
+  }
+  .main-nav__item--current a {
+    color: $basic-white;
+    opacity: 30%;
   }
   .main-nav__toggle {
     position: absolute;
@@ -35,6 +48,13 @@
     background-color: $basic-white;
     cursor: pointer;
     border: none;
+
+      &:hover {
+      opacity: 60%;
+    }
+      &:active {
+      opacity: 30%;
+    }
   }
   .main-nav--closed .main-nav__toggle::before {
     content: "";
@@ -105,11 +125,28 @@
   .main-nav li:nth-child(2) {
     margin-right: 140px;
   }
-  .main-nav__link {
+  .main-nav__item a {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
     color: $basic-black;
+  }
+  .main-nav__item a:hover {
+    color: $lightblue;
+  }
+  .main-nav__item a:active {
+    color: $basic-black;
+    opacity: 30%;
+  }
+  .main-nav__item--current a {
+    color: $basic-brown;
+  }
+  .main-nav__item--current a:hover {
+    color: $brown-hover;
+  }
+  .main-nav__item--current a:active {
+    color: $basic-brown;
+    opacity: 30%;
   }
   .main-nav__toggle {
     display: none;
