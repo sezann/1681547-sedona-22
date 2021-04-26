@@ -23,6 +23,18 @@
   display: flex;
   align-items: baseline;
 }
+.form__field {
+  position: relative;
+}
+.form__field::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -23px;
+  width: 320px;
+  height: 2px;
+  background-color: $form-gray;
+}
 .form__input {
   font-family: inherit;
   font-size: 18px;
@@ -65,6 +77,22 @@
   user-select: none;
   margin-left: 60px;
 }
+.form__input--phone {
+  position: relative;
+}
+.form__input--phone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: $gray-info;
+}
+
 .form__input--sights + label::before {
   content: "";
   position: absolute;
@@ -76,6 +104,7 @@
   border-radius: 10%;
   background-color: $form-gray;
 }
+
 .form__input--sights:checked + label::after {
   content: "";
   position: absolute;
@@ -150,6 +179,9 @@
   }
   .form__item label {
     margin-bottom: 63px;
+  }
+  .form__field::before {
+    display: none;
   }
 }
 

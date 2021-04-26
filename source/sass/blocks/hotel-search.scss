@@ -17,9 +17,9 @@
 .hotel-search__intro br {
   display: none;
 }
-.hotel-search__map {
+.hotel-search__map iframe {
   height: 350px;
-  background-image: url("../img/map-desktop.jpg.png");
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,5 +28,13 @@
   }
   .hotel-search__intro br {
     display: block;
+  }
+  .hotel-search .button {
+    width: 458px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .hotel-search__map iframe {
+    width: 1200px;
   }
 }

@@ -9,15 +9,23 @@
   color: $basic-white;
   background-color: $lightblue;
   border: $lightblue;
+  outline: none;
 
   padding: 16px 46px;
+}
+.button:hover {
+  background-color: $lightblue-hover;
+}
+.button:active {
+  background-color: $lightblue-focus;
+  color: rgba(255,255,255,0.7);
 }
 
 @media (min-width: $tablet-width) {
   .button {
     display: grid;
     grid-template-columns: 1fr;
-    width: 306px;
+    width: 324px;
   }
 }
 @media (min-width: $desktop-width) {

@@ -13,5 +13,13 @@
   z-index: 1;
   bottom: -24px;
 }
+@media (min-width: $desktop-width) {
+  .page-header__logo img {
+    width: 186px;
+    height: 96px;
+    top: 0;
+    left: 47%;
+  }
+}
 
 
