@@ -3,14 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
     <div class="container">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html"><img src="img/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип города Седона"></a>
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg.svg">
+            <img src="img/logotype-mobile.svg.svg" width="102" alt="Логотип города Седона">
+          </picture>
+        </a>
         <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
@@ -27,8 +39,8 @@
 
         <section class="intro">
           <h2 class="visually-hidden">Форма для отзыва</h2>
-          <div class="intro__image">
-            <img src="img/text-index.svg.svg" width="460" height="350" alt="Город Седона">
+          <div class="intro__image intro__image--inner">
+            <img src="img/logotype-sedona-mobile.svg" width="229" alt="Город Седона">
           </div>
           <h3 class="intro__subtitle">Оставьте свой отзыв</h3>
           <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
@@ -55,13 +67,13 @@
             <fieldset class="form__field form__field--info ">
               <h3 class="form__subtitle">Контактная информация:</h3>
               <div class="form__field-box">
-              <p>
+              <p class="form__field-box--phone">
                 <label for="form__phone">Контактный телефон*:</label>
-                <input id ="form__phone" class="form__input" type="tel" name="phone" placeholder="Введите телефон">
+                <input id ="form__phone" class="form__input form__input--phone" type="tel" name="phone" placeholder="Введите телефон">
               </p>
-              <p>
+              <p class="form__field-box--email">
                 <label for="form__email">Электронная почта*:</label>
-                <input id="form__email" class="form__input" type="email" name="email" placeholder="Введите e-mail">
+                <input id="form__email" class="form__input form__input--email" type="email" name="email" placeholder="Введите e-mail">
               </p>
               </div>
             </fieldset>
@@ -85,7 +97,7 @@
             </fieldset>
 
             <fieldset class="form__field form__field--sights">
-              <h3 class="form__subtitle">Посещенные достопримечательности:</h3>
+              <h3 class="form__subtitle">Посещенные<br> достопримечательности:</h3>
               <ul class="form__list form__list--sights">
                 <li class="form__item">
                   <input id="devil-bridge" class="visually-hidden form__input--sights" type="checkbox" name="bridge" checked>

@@ -15,6 +15,31 @@
 .features__subtitle br {
   display: none;
 }
+.features__item--road,
+.features__item--tourists {
+  position: relative;
+}
+@media (max-width: $mobile-only) {
+  .features__item--road::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 280px;
+    height: 2px;
+    background-color: $gray-line;
+  }
+  .features__item--tourists::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    width: 280px;
+    height: 2px;
+    background-color: $gray-line;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .features__list {
