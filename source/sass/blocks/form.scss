@@ -42,7 +42,7 @@
   font-weight: bold;
   color: $basic-black;
   background-color: $form-gray;
-  border: 2px solid $form-gray;
+  border: 3px solid $form-gray;
   height: 58px;
   width: 100%;
   margin-top: 15px;
@@ -54,7 +54,15 @@
     &--identity {
       margin-left: 20px;
     }
+    &:hover {
+      background-color: $gray-focus;
+    }
+    &:active {
+      background-color: $basic-white;
+      outline: none;
+    }
 }
+
 .form__field--info label {
   margin-left: 23px;
 }
@@ -80,17 +88,29 @@
 .form__input--phone {
   position: relative;
 }
-.form__input--phone::before {
+.form__field-box--phone::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 118px;
+  left: 218px;
   width: 58px;
   height: 58px;
-  background-image: url("../img/phone.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   background-color: $gray-info;
+  background-image: url("../img/icons/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 19px 19px;
+}
+.form__field-box--email::after {
+  content: "";
+  position: absolute;
+  top: 225px;
+  left: 218px;
+  width: 58px;
+  height: 58px;
+  background-color: $gray-info;
+  background-image: url("../img/icons/mail.svg.svg");
+  background-repeat: no-repeat;
+  background-position: 23px 23px;
 }
 
 .form__input--sights + label::before {
@@ -103,6 +123,9 @@
   border: 2px solid $form-gray;
   border-radius: 10%;
   background-color: $form-gray;
+}
+.form__input--sights:hover::before {
+  background-color: $gray-focus;
 }
 
 .form__input--sights:checked + label::after {
@@ -147,6 +170,7 @@
   .form__field--identity {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    padding-left: 33px;
   }
   .form__field--info {
     grid-column: 1 / -1;
@@ -183,6 +207,54 @@
   .form__field::before {
     display: none;
   }
+  .form__field-box--phone::after {
+    top: 117px;
+    left: 586px;
+  }
+  .form__field-box--email::after {
+    top: 225px;
+    left: 586px;
+  }
+  .form__subtitle {
+    position: relative;
+  }
+  .form__field--identity h3::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 292px;
+    top: 42px;
+    left: -35px;
+    background-color: $gray-line;
+  }
+  .form__field--info h3::before,
+  .form__field--emotions h3::before,
+  .form__field--sights h3::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 11px;
+    left: 10px;
+    background-color: $gray-line;
+  }
+  .form__field--info h3::after,
+  .form__field--emotions h3::after,
+  .form__field--sights h3::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 11px;
+    right: 10px;
+    background-color: $gray-line;
+  }
+  .form__field--sights h3::before {
+    top: 21px;
+  }
+  .form__field--sights h3::after {
+    top: 21px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -193,5 +265,41 @@
   .form__field-box {
     display: flex;
     justify-content: space-between;
+  }
+  .form__field-box p {
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+  }
+  .form__field--identity {
+    padding-left: 55px;
+  }
+  .form__input--phone,
+  .form__input--email {
+    width: 290px;
+    margin-left: 10px;
+  }
+  .form__field--info label {
+    margin-left: 0;
+  }
+  .form__field-box--phone::after {
+    top: 111px;
+    left: 403px;
+  }
+  .form__field-box--email::after {
+    top: 111px;
+    left: 898px;
+  }
+  .form__field--identity h3::before {
+    top: 4px;
+    left: -59px;
+  }
+  .form__field--info h3::before,
+  .form__field--emotions h3::before,
+  .form__field--sights h3::before,
+  .form__field--info h3::after,
+  .form__field--emotions h3::after,
+  .form__field--sights h3::after  {
+    width: 278px;
   }
 }
