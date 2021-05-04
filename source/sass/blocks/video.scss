@@ -22,13 +22,13 @@
   width: 100%;
   text-align: center;
   background-color: $lightblue;
-  background-image: url("../img/video-mobile.jpg");
+  background-image: url("../img/catalog/video-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-      background-image: url("../img/video-mobile@2x.jpg");
+      background-image: url("../img/catalog/video-mobile@2x.jpg");
       background-size: cover;
   }
 }
@@ -46,13 +46,13 @@
   outline: none;
   cursor: pointer;
 }
-.video__button path {
+.video__button-icon {
   fill: $gray-video;
 }
-.video__button:hover path {
+.video__button-icon:hover {
   fill: $basic-black;
 }
-.video__button:active path {
+.video__button-icon:active {
   fill: $basic-black;
   opacity: 30%;
 }
@@ -83,10 +83,10 @@
     transform: translateX(-25px) translateY(-55px);
     width: 280px;
     height: 45px;
-    background-color: $basic-gray;
+    background-color: $basic-black;
     opacity: 60%;
   }
-  svg.video__play-svg {
+  .video__button-icon--subtitles {
     margin-left: 110px;
   }
 }
@@ -102,12 +102,12 @@
     position: relative;
     height: 500px;
     width: 100%;
-    background-image: url("../img/video-tablet.jpg");
+    background-image: url("../img/catalog/video-tablet.jpg");
     background-position: 0 0;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/video-tablet@2x.jpg");
+      background-image: url("../img/catalog/video-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -116,8 +116,8 @@
     transform: translateY(566px);
     justify-content: space-between;
     width: 648px;
-    background-color: $basic-gray;
-    opacity: 60%;
+    background-color: $basic-black;
+    opacity: 50%;
   }
   .video__scale {
     position: relative;
@@ -136,21 +136,22 @@
     padding: 0;
     border-radius: 50%;
     background-color: $basic-white;
-
   }
   .video__control path {
     fill: $basic-white;
   }
   .video__button {
-    background-color: $basic-gray;
-    border: $basic-gray;
-    opacity: 60%;
+    background-color: $basic-black;
   }
-  .video__button:hover path {
+  .video__button-icon {
+    background-color: $basic-black;
+    fill: $basic-white;
+  }
+  .video__button-icon:hover {
     fill: $basic-white;
     opacity: 60%;
   }
-  .video__button:active path {
+  .video__button-icon:active {
     fill: $basic-white;
     opacity: 30%;
   }
@@ -169,10 +170,10 @@
     line-height: 24px;
   }
   .video__poster {
-    background-image: url("../img/video-desktop.jpg");
+    background-image: url("../img/catalog/video-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/video-desktop@2x.jpg");
+      background-image: url("../img/catalog/video-desktop@2x.jpg");
       background-size: cover;
     }
   }
