@@ -32,7 +32,7 @@
 .advantages__image-city img,
 .advantages__image-bridge img {
   display: block;
-  height: 260px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -75,7 +75,3 @@
     padding: 35px 75px;
   }
 }
-
-
-
-
