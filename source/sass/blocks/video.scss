@@ -4,18 +4,22 @@
   align-items: center;
   text-align: center;
 }
+
 .video__subtitle {
   font-size: 18px;
   line-height: 26px;
   margin: 0;
   margin-bottom: 35px;
 }
+
 .video__intro {
   margin: 0 30px 30px;
 }
+
 .video__intro br {
   display: none;
 }
+
 .video__poster {
   position: relative;
   height: 200px;
@@ -28,10 +32,11 @@
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-      background-image: url("../img/catalog/video-mobile@2x.jpg");
-      background-size: cover;
+    background-image: url("../img/catalog/video-mobile@2x.jpg");
+    background-size: cover;
   }
 }
+
 .video__control {
   position: relative;
   display: flex;
@@ -41,21 +46,26 @@
   background-color: $form-gray;
   padding: 0 25px;
 }
+
 .video__button {
   border: $form-gray;
   outline: none;
   cursor: pointer;
 }
+
 .video__button-icon {
   fill: $gray-video;
 }
+
 .video__button-icon:hover {
   fill: $basic-black;
 }
+
 .video__button-icon:active {
   fill: $basic-black;
   opacity: 30%;
 }
+
 .video__scale {
   position: absolute;
   top: 22px;
@@ -66,6 +76,7 @@
   opacity: 50%;
   cursor: pointer;
 }
+
 .video__toggle {
   position: absolute;
   transform: translateX(84px) translateY(19px);
@@ -86,6 +97,7 @@
     background-color: $basic-black;
     opacity: 60%;
   }
+
   .video__button-icon--subtitles {
     margin-left: 110px;
   }
@@ -95,9 +107,11 @@
   .video {
     padding: 60px 60px 40px;
   }
+
   .video__intro br {
     display: block;
   }
+
   .video__poster {
     position: relative;
     height: 500px;
@@ -111,6 +125,7 @@
       background-size: cover;
     }
   }
+
   .video__control {
     position: absolute;
     transform: translateY(566px);
@@ -119,6 +134,7 @@
     background-color: $basic-black;
     opacity: 50%;
   }
+
   .video__scale {
     position: relative;
     top: 0;
@@ -126,8 +142,8 @@
     height: 3px;
     background-color: $basic-white;
     opacity: 50%;
-
   }
+
   .video__toggle {
     position: absolute;
     transform: translateX(156px) translateY(-6px);
@@ -137,20 +153,25 @@
     border-radius: 50%;
     background-color: $basic-white;
   }
+
   .video__control path {
     fill: $basic-white;
   }
+
   .video__button {
     background-color: $basic-black;
   }
+
   .video__button-icon {
     background-color: $basic-black;
     fill: $basic-white;
   }
+
   .video__button-icon:hover {
     fill: $basic-white;
     opacity: 60%;
   }
+
   .video__button-icon:active {
     fill: $basic-white;
     opacity: 30%;
@@ -161,14 +182,17 @@
   .video {
     padding: 60px 200px 85px;
   }
+
   .video__subtitle {
     font-size: 30px;
     line-height: 26px;
   }
+
   .video__intro {
     font-size: 14px;
     line-height: 24px;
   }
+
   .video__poster {
     background-image: url("../img/catalog/video-desktop.jpg");
 
@@ -177,13 +201,16 @@
       background-size: cover;
     }
   }
+
   .video__control {
     transform: translateY(572px);
     width: 800px;
   }
+
   .video__scale {
     width: 540px;
   }
+
   .video__control path {
     fill: $basic-white;
   }

@@ -9,9 +9,11 @@
   margin: 0;
   padding: 0;
 }
+
 .recommendations__item {
   padding: 30px 21px 30px 70px;
 }
+
 .recommendations__item--accomodation::before {
   content: "";
   position: absolute;
@@ -22,6 +24,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .recommendations__item--gifts::before {
   content: "";
   position: absolute;
@@ -32,6 +35,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .recommendations__item--food::before {
   content: "";
   position: absolute;
@@ -42,34 +46,41 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 @media (min-width: $tablet-width) {
   .recommendations__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .recommendations__item {
     min-height: 330px;
     text-align: center;
     padding: 145px 32px 30px;
   }
+
   .recommendations__item--food {
     order: 1;
   }
+
   .recommendations__item--gifts {
     order: 2;
   }
+
   .recommendations__item--accomodation::before {
     transform: translateX(-35px) translateY(-88px);
     width: 75px;
     height: 72px;
     background-size: 75px 72px;
   }
+
   .recommendations__item--gifts::before {
     transform: translateX(-35px) translateY(-93px);
     width: 64px;
     height: 75px;
     background-size: 64px 75px;
   }
+
   .recommendations__item--food::before {
     transform: translateX(-35px) translateY(-84px);
     width: 76px;
@@ -77,5 +88,3 @@
     background-size: 76px 68px;
   }
 }
-
-
