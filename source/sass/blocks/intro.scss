@@ -1,38 +1,42 @@
 .intro__image {
   position: relative;
-  height: 389px;
+  height: 384px;
   text-align: center;
   background-color: $lightblue;
   background-image: url("../img/index/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 57% 0;
+  background-position: 57% -5px;
 
   @media (min-resolution: 2dppx) {
-      background-image: url("../img/index/back-mobile@2x.jpg");
-      background-size: cover;
+    background-image: url("../img/index/back-mobile@2x.jpg");
+    background-size: cover;
   }
 }
+
 .intro__image img {
   width: 282px;
   height: 214px;
-  margin-top: 90px;
+  margin-top: 89px;
 }
-.intro__image::after{
+
+.intro__image::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 57px;
-  top: 332px;
+  top: 327px;
   left: 0;
   background-image: url("../img/optimized-svg/intro-triangle-mobile.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
+
 .intro__image--inner {
   height: 150px;
-  background-position: 50% -239px ;
+  background-position: 50% -239px;
   background-size: cover;
 }
+
 .intro__image--inner::after {
   content: "";
   position: absolute;
@@ -50,30 +54,51 @@
   height: auto;
   margin-top: 50px;
 }
+
 .intro__subtitle {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin: 35px 0;
+  margin: 38px 0 30px;
 }
+
 .intro__text {
+  position: relative;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
   padding: 0 18px;
   margin-bottom: 35px;
 }
+
 .intro__subtitle br {
   display: none;
 }
+
 .intro__text br {
   display: none;
+}
+
+.intro__subtitle-wrap br {
+  display: block;
 }
 
 
 @media (max-width: $mobile-only) {
   .intro__subtitle {
     padding: 0 24px;
+  }
+
+  .intro__text::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 37px;
+    top: 65px;
+    left: 0;
+    background-image: url("../img/optimized-svg/mask-2.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 }
 
@@ -88,36 +113,50 @@
       background-image: url("../img/index/back-tablet@2x.jpg");
     }
   }
+
   .intro__image::after {
-    top: 463px;
+    top: 462px;
     background-image: url("../img/optimized-svg/intro-triangle-tablet.svg");
   }
+
   .intro__image img {
     width: 460px;
     height: 350px;
+    margin-top: 77px;
   }
+
   .intro__image--inner {
     height: 280px;
     background-size: cover;
     background-position: 57% -237px;
   }
-  .intro__image--inner::after{
+
+  .intro__image--inner::after {
     top: 224px;
     left: 0;
     background-image: url("../img/optimized-svg/intro-triangle-tablet.svg");
   }
+
   .intro__image--inner img {
     width: 457px;
     height: 80px;
     margin-top: 90px;
   }
+
   .intro__subtitle {
     font-size: 21px;
     line-height: 26px;
+    margin: 45px 0 30px;
   }
+
+  .intro__text {
+    margin-bottom: 54px;
+  }
+
   .intro__subtitle br {
     display: block;
   }
+
   .intro__text br {
     display: block;
   }
@@ -134,7 +173,8 @@
       background-size: 1200px auto;
     }
   }
-  .intro__image::after{
+
+  .intro__image::after {
     left: 0;
     background-image: url("../img/optimized-svg/intro-triangle-desktop.svg");
   }
