@@ -42,6 +42,7 @@
 
   .hotel-search .button {
     width: 458px;
+    padding: 17px 46px;
   }
 
   .hotel-search__title {
@@ -59,4 +60,14 @@
   .hotel-search__map iframe {
     width: 1200px;
   }
+
+  .hotel-search__inner {
+    padding: 58px 155px 63px;
+  }
+
+  .hotel-search .button {
+    margin-top: 20px;
+    padding: 18px 46px;
+  }
 }
+

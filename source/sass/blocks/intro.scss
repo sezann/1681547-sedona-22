@@ -32,8 +32,8 @@
 }
 
 .intro__image--inner {
-  height: 150px;
-  background-position: 50% -239px;
+  height: 157px;
+  background-position: 50% -233px;
   background-size: cover;
 }
 
@@ -42,7 +42,7 @@
   position: absolute;
   width: 100%;
   height: 57px;
-  top: 94px;
+  top: 100px;
   left: 0;
   background-image: url("../img/optimized-svg/intro-triangle-mobile.svg");
   background-repeat: no-repeat;
@@ -62,6 +62,10 @@
   margin: 38px 0 30px;
 }
 
+.intro__subtitle--form {
+  margin: 38px 0 26px;
+}
+
 .intro__text {
   position: relative;
   font-size: 14px;
@@ -69,6 +73,10 @@
   text-align: center;
   padding: 0 18px;
   margin-bottom: 35px;
+}
+
+.intro__text--form {
+  margin-bottom: -6px;
 }
 
 .intro__subtitle br {
@@ -89,7 +97,7 @@
     padding: 0 24px;
   }
 
-  .intro__text::after {
+  .intro__text--main::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -126,13 +134,13 @@
   }
 
   .intro__image--inner {
-    height: 280px;
+    height: 289px;
     background-size: cover;
-    background-position: 57% -237px;
+    background-position: 57% -228px;
   }
 
   .intro__image--inner::after {
-    top: 224px;
+    top: 233px;
     left: 0;
     background-image: url("../img/optimized-svg/intro-triangle-tablet.svg");
   }
@@ -140,13 +148,19 @@
   .intro__image--inner img {
     width: 457px;
     height: 80px;
-    margin-top: 90px;
+    margin-top: 93px;
   }
 
-  .intro__subtitle {
+  .intro__subtitle--form {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 63px 0 33px;
+  }
+
+  .intro__subtitle-wrap {
     font-size: 21px;
     line-height: 26px;
-    margin: 45px 0 30px;
+    margin-top: 44px;
   }
 
   .intro__text {
@@ -174,8 +188,36 @@
     }
   }
 
-  .intro__image::after {
+  .intro__image--inner {
+    height: 302px;
+    background-position: 57% -217px;
+    background-size: cover;
+  }
+
+  .intro__image--inner img {
+    margin-top: 101px;
+  }
+
+  .intro__inner .intro__image--inner::after {
+    top: 246px;
     left: 0;
     background-image: url("../img/optimized-svg/intro-triangle-desktop.svg");
+  }
+
+  .intro__image::after {
+    top: 464px;
+    background-image: url("../img/optimized-svg/intro-triangle-desktop.svg");
+  }
+
+  .intro__subtitle {
+    margin: 57px 0 30px;
+  }
+
+  .intro__subtitle--form {
+    margin: 112px 0 30px;
+  }
+
+  .intro__text {
+    margin-bottom: 41px;
   }
 }

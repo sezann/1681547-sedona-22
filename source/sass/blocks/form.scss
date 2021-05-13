@@ -1,7 +1,7 @@
 .form__field {
   position: relative;
+  padding: 0;
   border: none;
-  padding: 20px 0;
 }
 
 .form__list {
@@ -14,6 +14,22 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+
+  &--identity {
+    margin-top: 37px;
+  }
+
+  &--info {
+    margin-top: 22px;
+  }
+
+  &--impression {
+    margin-top: 34px;
+  }
+
+  &--sights {
+    margin-top: 11px;
+  }
 }
 
 .form__item {
@@ -32,11 +48,27 @@
 .form__field::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 16px;
   left: -23px;
   width: 320px;
   height: 2px;
   background-color: $form-gray;
+}
+
+.form__field--info::before {
+  top: 0;
+}
+
+.form__field--impression::before {
+  top: 12px;
+}
+
+.form__field--sights::before {
+  top: -6px;
+}
+
+.form__field--emotions::before {
+  top: -6px;
 }
 
 .form__input {
@@ -54,11 +86,18 @@
 
   &--emotions {
     width: 272px;
-    padding: 20px 0;
+    margin-top: -9px;
+    margin-bottom: 51px;
   }
 
   &--identity {
-    margin-left: 20px;
+    margin: 3px 0 5px 11px;
+  }
+
+  &--phone,
+  &--email {
+    margin-top: 12px;
+    padding-left: 17px;
   }
 
   &:hover {
@@ -72,12 +111,12 @@
 }
 
 .form__field--info label {
-  margin-left: 23px;
+  margin-left: 18px;
 }
 
 .form__field--impression h3,
 .form__field--sights h3 {
-  margin-bottom: 50px;
+  margin-bottom: 36px;
 }
 
 .form__field--emotions textarea {
@@ -94,7 +133,16 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  margin-left: 60px;
+  margin-left: 75px;
+}
+
+.form__item--bell label {
+  margin-top: 55px;
+  margin-bottom: 53px;
+}
+
+.form__item--rocks {
+  margin-top: 55px;
 }
 
 .form__input--phone {
@@ -104,8 +152,8 @@
 .form__field-box--phone::after {
   content: "";
   position: absolute;
-  top: 118px;
-  left: 218px;
+  top: 100px;
+  left: 221px;
   width: 58px;
   height: 58px;
   background-color: $gray-info;
@@ -117,7 +165,7 @@
 .form__field-box--email::after {
   content: "";
   position: absolute;
-  top: 225px;
+  top: 202px;
   left: 218px;
   width: 58px;
   height: 58px;
@@ -130,10 +178,10 @@
 .form__input--sights + label::before {
   content: "";
   position: absolute;
-  left: -60px;
-  top: -12px;
-  width: 46px;
-  height: 46px;
+  left: -76px;
+  top: -16px;
+  width: 49px;
+  height: 53px;
   border: 2px solid $form-gray;
   border-radius: 10%;
   background-color: $form-gray;
@@ -146,8 +194,8 @@
 .form__input--sights:checked + label::after {
   content: "";
   position: absolute;
-  left: -46px;
-  top: 6px;
+  left: -62px;
+  top: 5px;
   width: 23px;
   height: 16px;
   background-image: url("../img/optimized-svg/tick.svg");
@@ -158,8 +206,8 @@
 .form__input--impression + label::before {
   content: "";
   position: absolute;
-  left: -66px;
-  top: -11px;
+  left: -76px;
+  top: -15px;
   width: 48px;
   height: 48px;
   border: 2px solid $form-gray;
@@ -170,12 +218,17 @@
 .form__input--impression:checked + label::after {
   content: "";
   position: absolute;
-  left: -51px;
-  top: 3px;
-  width: 23px;
-  height: 23px;
+  left: -61px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: $basic-black;
+}
+
+.form__button {
+  padding: 16px 48px;
+  margin-bottom: 44px;
 }
 
 @media (min-width: $tablet-width) {
@@ -183,16 +236,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    margin-bottom: 19px;
   }
 
   .form__field--identity {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding-left: 33px;
+    padding-left: 56px;
   }
 
   .form__field--info {
     grid-column: 1 / -1;
+    margin-top: 30px;
   }
 
   .form__field--impression {
@@ -219,18 +274,100 @@
     text-align: center;
   }
 
+  .form__field--impression h3 {
+    margin-bottom: 75px;
+  }
+
+  .form__field--emotions h3 {
+    margin-top: 85px;
+    margin-bottom: 64px;
+  }
+
+  .form__item {
+    margin-bottom: 0;
+  }
+
+  .form__item--bell label {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    margin-left: 111px;
+  }
+
+  .form__item--bridge label {
+    margin-top: 24px;
+    margin-bottom: 0;
+    margin-left: 172px;
+  }
+
+  .form__item--park label {
+    margin-left: 172px;
+    margin-top: 54px;
+  }
+
+  .form__item--rocks label {
+    margin-left: 109px;
+  }
+
   .form__subtitle {
+    font-size: 21px;
+    line-height: 26px;
     position: relative;
     text-align: start;
+
+    &--impression {
+      margin-top: 28px;
+    }
+
+    &--identity {
+      margin-top: 28px;
+      margin-left: 0;
+      margin-bottom: 55px;
+    }
+
+    &--sights {
+      margin-top: 37px;
+    }
   }
 
   .form__legend {
     display: block;
     justify-self: end;
+    margin-top: 21px;
   }
 
-  .form__item label {
-    margin-bottom: 63px;
+  .form__item--negative-impression label {
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-left: 74px;
+  }
+
+  .form__input--phone {
+    margin-top: 17px;
+    margin-bottom: 11px;
+  }
+
+  .form__input--email {
+    margin-top: 9px;
+  }
+
+  .form__input--emotions {
+    width: 100%;
+    margin-bottom: 53px;
+  }
+
+  .form__input--impression + label::before {
+    left: -76px;
+    top: -15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .form__input--impression:checked + label::after {
+    top: 0;
+  }
+
+  .form__input--identity {
+    margin: 3px 0 3px 13px;
   }
 
   .form__field::before {
@@ -238,12 +375,12 @@
   }
 
   .form__field-box--phone::after {
-    top: 117px;
-    left: 586px;
+    top: 105px;
+    left: 589px;
   }
 
   .form__field-box--email::after {
-    top: 225px;
+    top: 218px;
     left: 586px;
   }
 
@@ -252,8 +389,8 @@
     position: absolute;
     width: 1px;
     height: 292px;
-    top: 42px;
-    left: -35px;
+    top: 4px;
+    left: -59px;
     background-color: $gray-line;
   }
 
@@ -265,7 +402,7 @@
     width: 123px;
     height: 1px;
     top: 11px;
-    left: 10px;
+    left: -2px;
     background-color: $gray-line;
   }
 
@@ -277,16 +414,24 @@
     width: 123px;
     height: 1px;
     top: 11px;
-    right: 10px;
+    right: 0;
     background-color: $gray-line;
   }
 
-  .form__field--sights h3::before {
-    top: 21px;
+  .form__field--sights h3::before,
+  .form__field--sights h3::after  {
+    top: 27px;
   }
 
-  .form__field--sights h3::after {
-    top: 21px;
+  .form__field--emotions h3::before,
+  .form__field--emotions h3::after {
+    top: 9px;
+  }
+
+  .form__input--sights + label::before {
+    left: -81px;
+    width: 52px;
+    height: 53px;
   }
 }
 

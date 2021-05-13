@@ -30,6 +30,11 @@
 
 .features__item--tourists {
   padding-top: 16px;
+  padding-bottom: 14px;
+}
+
+.features__subtitle--tourists {
+  margin-bottom: -2px;
 }
 
 @media (max-width: $mobile-only) {
@@ -86,6 +91,10 @@
 
 @media (min-width: $desktop-width) {
   .features__item {
-    padding: 30px 50px;
+    padding: 48px 50px;
+  }
+
+  .features__subtitle {
+    margin: -4px 0 12px;
   }
 }

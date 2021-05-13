@@ -87,8 +87,8 @@ a {
   .page-header__logo img {
     width: 186px;
     height: 96px;
-    top: 0;
-    left: 47%; } }
+    top: -2px;
+    left: 558px; } }
 
 .main-nav {
   position: relative;
@@ -209,6 +209,12 @@ a {
   .main-nav__toggle {
     display: none; } }
 
+@media (min-width: 1200px) {
+  .main-nav__list {
+    justify-content: space-around; }
+  .main-nav li:nth-child(2) {
+    margin-right: 280px; } }
+
 .intro__image {
   position: relative;
   height: 384px;
@@ -239,8 +245,8 @@ a {
   background-position: 50% 0; }
 
 .intro__image--inner {
-  height: 150px;
-  background-position: 50% -239px;
+  height: 157px;
+  background-position: 50% -233px;
   background-size: cover; }
 
 .intro__image--inner::after {
@@ -248,7 +254,7 @@ a {
   position: absolute;
   width: 100%;
   height: 57px;
-  top: 94px;
+  top: 100px;
   left: 0;
   background-image: url("../img/optimized-svg/intro-triangle-mobile.svg");
   background-repeat: no-repeat;
@@ -265,6 +271,9 @@ a {
   text-align: center;
   margin: 38px 0 30px; }
 
+.intro__subtitle--form {
+  margin: 38px 0 26px; }
+
 .intro__text {
   position: relative;
   font-size: 14px;
@@ -272,6 +281,9 @@ a {
   text-align: center;
   padding: 0 18px;
   margin-bottom: 35px; }
+
+.intro__text--form {
+  margin-bottom: -6px; }
 
 .intro__subtitle br {
   display: none; }
@@ -285,7 +297,7 @@ a {
 @media (max-width: 767px) {
   .intro__subtitle {
     padding: 0 24px; }
-  .intro__text::after {
+  .intro__text--main::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -315,21 +327,25 @@ a {
     height: 350px;
     margin-top: 77px; }
   .intro__image--inner {
-    height: 280px;
+    height: 289px;
     background-size: cover;
-    background-position: 57% -237px; }
+    background-position: 57% -228px; }
   .intro__image--inner::after {
-    top: 224px;
+    top: 233px;
     left: 0;
     background-image: url("../img/optimized-svg/intro-triangle-tablet.svg"); }
   .intro__image--inner img {
     width: 457px;
     height: 80px;
-    margin-top: 90px; }
-  .intro__subtitle {
+    margin-top: 93px; }
+  .intro__subtitle--form {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 63px 0 33px; }
+  .intro__subtitle-wrap {
     font-size: 21px;
     line-height: 26px;
-    margin: 45px 0 30px; }
+    margin-top: 44px; }
   .intro__text {
     margin-bottom: 54px; }
   .intro__subtitle br {
@@ -347,9 +363,25 @@ a {
       background-size: 1200px auto; } }
 
 @media (min-width: 1200px) {
-  .intro__image::after {
+  .intro__image--inner {
+    height: 302px;
+    background-position: 57% -217px;
+    background-size: cover; }
+  .intro__image--inner img {
+    margin-top: 101px; }
+  .intro__inner .intro__image--inner::after {
+    top: 246px;
     left: 0;
-    background-image: url("../img/optimized-svg/intro-triangle-desktop.svg"); } }
+    background-image: url("../img/optimized-svg/intro-triangle-desktop.svg"); }
+  .intro__image::after {
+    top: 464px;
+    background-image: url("../img/optimized-svg/intro-triangle-desktop.svg"); }
+  .intro__subtitle {
+    margin: 57px 0 30px; }
+  .intro__subtitle--form {
+    margin: 112px 0 30px; }
+  .intro__text {
+    margin-bottom: 41px; } }
 
 .button {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -456,9 +488,9 @@ a {
 
 @media (min-width: 1200px) {
   .advantages__inner-city {
-    padding: 35px 45px; }
+    padding: 30px 45px; }
   .advantages__inner-bridge {
-    padding: 35px 75px; } }
+    padding: 35px 84px; } }
 
 .recommendations__list {
   display: flex;
@@ -517,6 +549,9 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0; }
 
+.recommendations__description br {
+  display: none; }
+
 @media (min-width: 768px) {
   .recommendations__list {
     display: grid;
@@ -554,6 +589,14 @@ a {
   .recommendations__subtitle {
     margin-bottom: 26px; } }
 
+@media (min-width: 1200px) {
+  .recommendations__item {
+    padding: 140px 46px 30px; }
+  .recommendations__item--food {
+    padding: 140px 29px 30px; }
+  .recommendations__description br {
+    display: block; } }
+
 .features__list {
   font-size: 14px;
   line-height: 21px;
@@ -579,7 +622,11 @@ a {
   position: relative; }
 
 .features__item--tourists {
-  padding-top: 16px; }
+  padding-top: 16px;
+  padding-bottom: 14px; }
+
+.features__subtitle--tourists {
+  margin-bottom: -2px; }
 
 @media (max-width: 767px) {
   .features__item--road::before {
@@ -618,7 +665,9 @@ a {
 
 @media (min-width: 1200px) {
   .features__item {
-    padding: 30px 50px; } }
+    padding: 48px 50px; }
+  .features__subtitle {
+    margin: -4px 0 12px; } }
 
 .hotel-search__inner {
   display: flex;
@@ -653,7 +702,8 @@ a {
   .hotel-search__intro br {
     display: block; }
   .hotel-search .button {
-    width: 458px; }
+    width: 458px;
+    padding: 17px 46px; }
   .hotel-search__title {
     font-size: 30px;
     line-height: 26px;
@@ -663,7 +713,12 @@ a {
 
 @media (min-width: 1200px) {
   .hotel-search__map iframe {
-    width: 1200px; } }
+    width: 1200px; }
+  .hotel-search__inner {
+    padding: 58px 155px 63px; }
+  .hotel-search .button {
+    margin-top: 20px;
+    padding: 18px 46px; } }
 
 .feedback {
   padding: 0 20px; }
@@ -678,8 +733,8 @@ a {
 
 .form__field {
   position: relative;
-  border: none;
-  padding: 20px 0; }
+  padding: 0;
+  border: none; }
 
 .form__list {
   list-style: none;
@@ -690,6 +745,14 @@ a {
   font-size: 18px;
   line-height: 26px;
   text-align: center; }
+  .form__subtitle--identity {
+    margin-top: 37px; }
+  .form__subtitle--info {
+    margin-top: 22px; }
+  .form__subtitle--impression {
+    margin-top: 34px; }
+  .form__subtitle--sights {
+    margin-top: 11px; }
 
 .form__item {
   font-size: 18px;
@@ -705,11 +768,23 @@ a {
 .form__field::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 16px;
   left: -23px;
   width: 320px;
   height: 2px;
   background-color: #f2f2f2; }
+
+.form__field--info::before {
+  top: 0; }
+
+.form__field--impression::before {
+  top: 12px; }
+
+.form__field--sights::before {
+  top: -6px; }
+
+.form__field--emotions::before {
+  top: -6px; }
 
 .form__input {
   font-family: inherit;
@@ -725,9 +800,13 @@ a {
   padding-left: 20px; }
   .form__input--emotions {
     width: 272px;
-    padding: 20px 0; }
+    margin-top: -9px;
+    margin-bottom: 51px; }
   .form__input--identity {
-    margin-left: 20px; }
+    margin: 3px 0 5px 11px; }
+  .form__input--phone, .form__input--email {
+    margin-top: 12px;
+    padding-left: 17px; }
   .form__input:hover {
     background-color: #e5e5e5; }
   .form__input:active {
@@ -735,11 +814,11 @@ a {
     outline: none; }
 
 .form__field--info label {
-  margin-left: 23px; }
+  margin-left: 18px; }
 
 .form__field--impression h3,
 .form__field--sights h3 {
-  margin-bottom: 50px; }
+  margin-bottom: 36px; }
 
 .form__field--emotions textarea {
   min-height: 160px;
@@ -755,7 +834,14 @@ a {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  margin-left: 60px; }
+  margin-left: 75px; }
+
+.form__item--bell label {
+  margin-top: 55px;
+  margin-bottom: 53px; }
+
+.form__item--rocks {
+  margin-top: 55px; }
 
 .form__input--phone {
   position: relative; }
@@ -763,8 +849,8 @@ a {
 .form__field-box--phone::after {
   content: "";
   position: absolute;
-  top: 118px;
-  left: 218px;
+  top: 100px;
+  left: 221px;
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
@@ -775,7 +861,7 @@ a {
 .form__field-box--email::after {
   content: "";
   position: absolute;
-  top: 225px;
+  top: 202px;
   left: 218px;
   width: 58px;
   height: 58px;
@@ -787,10 +873,10 @@ a {
 .form__input--sights + label::before {
   content: "";
   position: absolute;
-  left: -60px;
-  top: -12px;
-  width: 46px;
-  height: 46px;
+  left: -76px;
+  top: -16px;
+  width: 49px;
+  height: 53px;
   border: 2px solid #f2f2f2;
   border-radius: 10%;
   background-color: #f2f2f2; }
@@ -801,8 +887,8 @@ a {
 .form__input--sights:checked + label::after {
   content: "";
   position: absolute;
-  left: -46px;
-  top: 6px;
+  left: -62px;
+  top: 5px;
   width: 23px;
   height: 16px;
   background-image: url("../img/optimized-svg/tick.svg");
@@ -812,8 +898,8 @@ a {
 .form__input--impression + label::before {
   content: "";
   position: absolute;
-  left: -66px;
-  top: -11px;
+  left: -76px;
+  top: -15px;
   width: 48px;
   height: 48px;
   border: 2px solid #f2f2f2;
@@ -823,24 +909,30 @@ a {
 .form__input--impression:checked + label::after {
   content: "";
   position: absolute;
-  left: -51px;
-  top: 3px;
-  width: 23px;
-  height: 23px;
+  left: -61px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: #000000; }
+
+.form__button {
+  padding: 16px 48px;
+  margin-bottom: 44px; }
 
 @media (min-width: 768px) {
   .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 19px; }
   .form__field--identity {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding-left: 33px; }
+    padding-left: 56px; }
   .form__field--info {
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    margin-top: 30px; }
   .form__field--impression {
     grid-column: 1 / 2;
     grid-row: 1 / 2; }
@@ -855,29 +947,79 @@ a {
   .form__field--sights h3,
   .form__field--emotions h3 {
     text-align: center; }
+  .form__field--impression h3 {
+    margin-bottom: 75px; }
+  .form__field--emotions h3 {
+    margin-top: 85px;
+    margin-bottom: 64px; }
+  .form__item {
+    margin-bottom: 0; }
+  .form__item--bell label {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    margin-left: 111px; }
+  .form__item--bridge label {
+    margin-top: 24px;
+    margin-bottom: 0;
+    margin-left: 172px; }
+  .form__item--park label {
+    margin-left: 172px;
+    margin-top: 54px; }
+  .form__item--rocks label {
+    margin-left: 109px; }
   .form__subtitle {
+    font-size: 21px;
+    line-height: 26px;
     position: relative;
     text-align: start; }
+    .form__subtitle--impression {
+      margin-top: 28px; }
+    .form__subtitle--identity {
+      margin-top: 28px;
+      margin-left: 0;
+      margin-bottom: 55px; }
+    .form__subtitle--sights {
+      margin-top: 37px; }
   .form__legend {
     display: block;
-    justify-self: end; }
-  .form__item label {
-    margin-bottom: 63px; }
+    justify-self: end;
+    margin-top: 21px; }
+  .form__item--negative-impression label {
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-left: 74px; }
+  .form__input--phone {
+    margin-top: 17px;
+    margin-bottom: 11px; }
+  .form__input--email {
+    margin-top: 9px; }
+  .form__input--emotions {
+    width: 100%;
+    margin-bottom: 53px; }
+  .form__input--impression + label::before {
+    left: -76px;
+    top: -15px;
+    width: 50px;
+    height: 50px; }
+  .form__input--impression:checked + label::after {
+    top: 0; }
+  .form__input--identity {
+    margin: 3px 0 3px 13px; }
   .form__field::before {
     display: none; }
   .form__field-box--phone::after {
-    top: 117px;
-    left: 586px; }
+    top: 105px;
+    left: 589px; }
   .form__field-box--email::after {
-    top: 225px;
+    top: 218px;
     left: 586px; }
   .form__field--identity h3::before {
     content: "";
     position: absolute;
     width: 1px;
     height: 292px;
-    top: 42px;
-    left: -35px;
+    top: 4px;
+    left: -59px;
     background-color: #d6d6d6; }
   .form__field--info h3::before,
   .form__field--emotions h3::before,
@@ -887,7 +1029,7 @@ a {
     width: 123px;
     height: 1px;
     top: 11px;
-    left: 10px;
+    left: -2px;
     background-color: #d6d6d6; }
   .form__field--info h3::after,
   .form__field--emotions h3::after,
@@ -897,12 +1039,18 @@ a {
     width: 123px;
     height: 1px;
     top: 11px;
-    right: 10px;
+    right: 0;
     background-color: #d6d6d6; }
-  .form__field--sights h3::before {
-    top: 21px; }
+  .form__field--sights h3::before,
   .form__field--sights h3::after {
-    top: 21px; } }
+    top: 27px; }
+  .form__field--emotions h3::before,
+  .form__field--emotions h3::after {
+    top: 9px; }
+  .form__input--sights + label::before {
+    left: -81px;
+    width: 52px;
+    height: 53px; } }
 
 @media (min-width: 1200px) {
   .form__list--sights {
@@ -1297,7 +1445,7 @@ a {
 
 @media (min-width: 1200px) {
   .page-footer {
-    padding: 36px 120px; }
+    padding: 0 120px; }
   .copyright__link {
     margin-left: auto; }
   .page-footer__contacts-hashtag {

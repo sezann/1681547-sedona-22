@@ -181,3 +181,13 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    justify-content: space-around;
+  }
+
+  .main-nav li:nth-child(2) {
+    margin-right: 280px;
+  }
+}

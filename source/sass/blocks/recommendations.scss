@@ -64,6 +64,10 @@
   background-position: 0 0;
 }
 
+.recommendations__description br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .recommendations__list {
     display: grid;
@@ -120,5 +124,19 @@
 
   .recommendations__subtitle {
     margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recommendations__item {
+    padding: 140px 46px 30px;
+  }
+
+  .recommendations__item--food {
+    padding: 140px 29px 30px;
+  }
+
+  .recommendations__description br {
+    display: block;
   }
 }
