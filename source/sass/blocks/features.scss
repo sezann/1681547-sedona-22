@@ -1,5 +1,5 @@
 .features__list {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 21px;
   text-align: center;
   color: $text-color;
@@ -9,16 +9,34 @@
   padding: 0;
   margin: 0;
 }
-.features__item {
-  padding: 30px 21px;
+
+.features__subtitle {
+  font-size: 18px;
+  line-height: 21px;
 }
+
+.features__item {
+  padding: 9px 36px;
+}
+
 .features__subtitle br {
   display: none;
 }
+
 .features__item--road,
 .features__item--tourists {
   position: relative;
 }
+
+.features__item--tourists {
+  padding-top: 16px;
+  padding-bottom: 14px;
+}
+
+.features__subtitle--tourists {
+  margin-bottom: -2px;
+}
+
 @media (max-width: $mobile-only) {
   .features__item--road::before {
     content: "";
@@ -29,10 +47,11 @@
     height: 2px;
     background-color: $gray-line;
   }
+
   .features__item--tourists::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 3px;
     left: 18px;
     width: 280px;
     height: 2px;
@@ -46,20 +65,36 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .features__subtitle {
     font-size: 21px;
     line-height: 26px;
+    margin: 34px 0 12px;
   }
+
+  .features__description {
+    margin-top: 20px;
+  }
+
+  .features__item--road .features__description {
+    padding: 0 15px;
+  }
+
   .features__subtitle br {
     display: block;
   }
+
   .features__item {
-    padding: 30px 48px;
+    padding: 10px 38px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__item {
-    padding: 30px 50px;
+    padding: 48px 50px;
+  }
+
+  .features__subtitle {
+    margin: -4px 0 12px;
   }
 }

@@ -1,5 +1,5 @@
 .button {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -13,12 +13,14 @@
 
   padding: 16px 46px;
 }
+
 .button:hover {
   background-color: $lightblue-hover;
 }
+
 .button:active {
   background-color: $lightblue-focus;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media (min-width: $tablet-width) {
@@ -28,6 +30,7 @@
     width: 324px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .button {
     width: 476px;

@@ -6,12 +6,12 @@
     <title>HTML Academy: Седона</title>
 
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <div class="container">
@@ -23,7 +23,7 @@
             <img src="img/optimized-svg/logo-mobile.svg" width="102" alt="Логотип города Седона">
           </picture>
         </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current"><a href="#">Главная</a></li>
@@ -46,8 +46,8 @@
               <img src="img/optimized-svg/text-index.svg" width="282" alt="Добро пожаловать в Седону">
             </picture>
           </div>
-          <h3 class="intro__subtitle">Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
-          <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <h3 class="intro__subtitle intro__subtitle-wrap">Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
+          <p class="intro__text intro__text--main">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
 
         <section class="advantages">
@@ -56,13 +56,13 @@
               <div class="advantages__inner-city">
                 <h3 class="advantages__subtitle">Настоящий<br> городок</h3>
                 <p class="advantages__number">&mdash; №1 &mdash;</p>
-                <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                <p class="advantages__description">Седона не аттракцион для туристов, там<br> &nbsp;течет своя жизнь</p>
               </div>
               <div class="advantages__image-city">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-webp/photo-city-desktop.webp 1x, img/photo-webp/photo-city-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-webp/photo-city-tablet.webp 1x, img/photo-webp/photo-city-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-webp/photo-city-mobile.webp 1x, img/photo-webp/photo-city-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/city-desktop.webp 1x, img/index/city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/index/city-tablet.webp 1x, img/index/city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/index/city-mobile.webp 1x, img/index/city-mobile@2x.webp 2x">
 
                   <source media="(min-width:1200px)" srcset="img/index/city-desktop.jpg 1x, img/index/city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/index/city-tablet.jpg 1x, img/index/city-tablet@2x.jpg 2x">
@@ -78,7 +78,7 @@
                 </li>
                 <li class="recommendations__item recommendations__item--gifts">
                   <h3 class="recommendations__subtitle">Сувениры</h3>
-                  <p class="recommendations__description">Не только китайского, но и местного производства!</p>
+                  <p class="recommendations__description">Не только китайского,<br> но и местного производства!</p>
                 </li>
                 <li class="recommendations__item recommendations__item--food">
                   <h3 class="recommendations__subtitle">Еда</h3>
@@ -88,15 +88,15 @@
             </li>
             <li class="advantages__item advantages__item--bridge">
               <div class="advantages__inner-bridge" >
-                <h3 class="advantages__subtitle">Там есть<br> мост дьявола</h3>
+                <h3 class="advantages__subtitle">Там есть<br> &nbsp;мост дьявола</h3>
                 <p class="advantages__number">&mdash; №2 &mdash;</p>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="advantages__image-bridge">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-webp/photo-bridge-desktop.webp 1x, img/photo-webp/photo-bridge-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-webp/photo-bridge-tablet.webp 1x, img/photo-webp/photo-bridge-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-webp/photo-bridge-mobile.webp 1x, img/photo-webp/photo-bridge-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/bridge-desktop.webp 1x, img/index/bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/index/bridge-tablet.webp 1x, img/index/bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/index/bridge-mobile.webp 1x, img/index/bridge-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1200px)" srcset="img/index/bridge-desktop.jpg 1x, img/index/bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/index/bridge-tablet.jpg 1x, img/index/bridge-tablet@2x.jpg 2x">
@@ -117,7 +117,7 @@
                   <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="features__item features__item--tourists">
-                  <h3 class="features__subtitle">Мало<br> туристов</h3>
+                  <h3 class="features__subtitle features__subtitle--tourists">Мало<br> туристов</h3>
                   <p class="features__number">&mdash; №5 &mdash;</p>
                   <p class="features__description">Большинство едет в Гранд Каньон и толпится там</p>
                 </li>
@@ -183,6 +183,6 @@
       </footer>
     </div>
 
-    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/script.min.js"></script>
   </body>
 </html>

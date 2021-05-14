@@ -6,12 +6,12 @@
     <title>HTML Academy: Седона</title>
 
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <div class="container">
@@ -37,7 +37,7 @@
       <main class="page-main">
         <h1 class="visually-hidden">Фото и видео Седоны</h1>
 
-        <section class="intro">
+        <section class="intro intro__inner">
           <h2 class="visually-hidden">Подборка самых популярных фото</h2>
           <div class="intro__image intro__image--inner">
             <picture>
@@ -45,8 +45,8 @@
               <img src="img/optimized-svg/text-sedona.svg" width="229" alt="Город Седона">
             </picture>
           </div>
-          <h3 class="intro__subtitle">Фото и видео</h3>
-          <p class="intro__text">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
+          <h3 class="intro__subtitle intro__subtitle--catalog">Фото и видео</h3>
+          <p class="intro__text intro__text--catalog">Не можете решиться на путешествие из-за курса?&nbsp; <br>Фотографии помогут вам забыть о политике и экономике.</p>
         </section>
 
         <section class="gallery">
@@ -54,6 +54,10 @@
             <li class="gallery__item gallery__item--sunset">
               <figure class="gallery__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
                   <img class="gallery__image-sunset" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Дорога и горы на фоне заката">
@@ -62,13 +66,17 @@
               </figure>
               <div class="gallery__item-box">
                 <p class="gallery__item-author">Автор фото: Борис</p>
-                <p class="gallery__item-likes">1350</p>
+                <p class="gallery__item-likes gallery__item-likes--sunset">1350</p>
               </div>
               <div class="gallery__item-shadow"></div>
             </li>
             <li class="gallery__item gallery__item--flowers">
               <figure class="gallery__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
                   <img class="gallery__image-flowers" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Цветы">
@@ -77,13 +85,17 @@
               </figure>
               <div class="gallery__item-box">
                 <p class="gallery__item-author">Автор фото: Сергей</p>
-                <p class="gallery__item-likes">143</p>
+                <p class="gallery__item-likes gallery__item-likes--flowers">143</p>
               </div>
               <div class="gallery__item-shadow"></div>
             </li>
             <li class="gallery__item gallery__item--road">
               <figure class="gallery__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
                   <img class="gallery__image-road" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Серпантин в окружении густого леса">
@@ -99,6 +111,10 @@
             <li class="gallery__item gallery__item--bridge">
               <figure class="gallery__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.webp 1x, img/catalog/photo-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.webp 1x, img/catalog/photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-4-mobile.webp 1x, img/catalog/photo-4-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
                   <img class="gallery__image-bridge" src="img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Узкий каменный мост">
@@ -107,7 +123,7 @@
               </figure>
               <div class="gallery__item-box">
                 <p class="gallery__item-author">Автор фото: Антон</p>
-                <p class="gallery__item-likes">254</p>
+                <p class="gallery__item-likes gallery__item-likes--bridge">254</p>
               </div>
               <div class="gallery__item-shadow"></div>
             </li>
@@ -116,12 +132,12 @@
 
         <section class="video">
           <h2 class="visually-hidden">Видеопрезентация</h2>
-          <h3 class="video__subtitle">Вы еще сомневаетесь?</h3>
+          <h3 class="video__subtitle">Все еще сомневаетесь?</h3>
           <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
           <video class="video__poster"></video>
           <div class="video__control">
             <button class="video__button" type="button" aria-label="Запустить видео">
-              <svg class="video__button-icon" width="16" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <svg class="video__button-icon video__button-icon--replay" width="16" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-replay"></use>
               </svg>
             </button>
@@ -186,6 +202,6 @@
       </footer>
     </div>
 
-    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/script.min.js"></script>
   </body>
 </html>
