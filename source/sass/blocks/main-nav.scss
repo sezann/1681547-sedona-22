@@ -144,6 +144,10 @@
     margin-right: 188px;
   }
 
+  .main-nav li:nth-child(3) {
+    margin-left: auto;
+  }
+
   .main-nav li:last-child {
     margin-left: 35px;
   }
@@ -187,7 +191,24 @@
     justify-content: space-around;
   }
 
+  .main-nav {
+    padding: 8px 48px;
+  }
+
+  .main-nav li:first-child {
+    margin-right: 98px;
+    margin-left: 43px;
+  }
+
   .main-nav li:nth-child(2) {
-    margin-right: 280px;
+    margin-right: 273px;
+  }
+
+  .main-nav li:nth-child(3) {
+    margin-right: auto;
+  }
+
+  .main-nav li:last-child {
+    margin-left: 35px;
   }
 }
