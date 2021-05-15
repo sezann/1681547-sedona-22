@@ -9,6 +9,8 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
@@ -20,10 +22,10 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/optimized-svg/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/optimized-svg/logo-tablet.svg">
-            <img src="img/optimized-svg/logo-mobile.svg" width="102" alt="Логотип города Седона">
+            <img src="img/optimized-svg/logo-mobile.svg" width="102" height="84" alt="Логотип города Седона">
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="#">Главная</a></li>
@@ -42,7 +44,7 @@
           <div class="intro__image intro__image--inner">
             <picture>
               <source media="(min-width: 768px)" srcset="img/optimized-svg/text-sedona-tablet.svg">
-              <img src="img/optimized-svg/text-sedona.svg" width="229" alt="Город Седона">
+              <img src="img/optimized-svg/text-sedona.svg" width="229" height="39" alt="Город Седона">
             </picture>
           </div>
           <h3 class="intro__subtitle intro__subtitle--catalog">Фото и видео</h3>
@@ -133,7 +135,7 @@
         <section class="video">
           <h2 class="visually-hidden">Видеопрезентация</h2>
           <h3 class="video__subtitle">Все еще сомневаетесь?</h3>
-          <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
+          <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами,&nbsp; пока они&nbsp;<br>не подорожали в очередной раз!</p>
           <video class="video__poster"></video>
           <div class="video__control">
             <button class="video__button" type="button" aria-label="Запустить видео">
@@ -162,7 +164,7 @@
       <footer class="page-footer">
         <div class="page-footer__contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <a class="page-footer__contacts-hashtag" href="#" aria-label="hashtag visitsedona">#VISITSEDONA</a>
+          <a class="page-footer__contacts-hashtag" href="#" aria-label="Hashtag visitsedona">#VISITSEDONA</a>
         </div>
         <div class="page-footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>

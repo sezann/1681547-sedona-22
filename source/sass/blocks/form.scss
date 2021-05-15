@@ -136,6 +136,18 @@
   margin-left: 75px;
 }
 
+.form__item label:hover::before {
+  background-color: $gray-focus;
+}
+
+.form__item label:active::before {
+  background-color: $gray-active;
+}
+
+.form__item label:active::after {
+  opacity: 0.3;
+}
+
 .form__item--bell label {
   margin-top: 55px;
   margin-bottom: 53px;
