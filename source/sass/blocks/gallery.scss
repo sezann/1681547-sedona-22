@@ -139,6 +139,7 @@
   }
 
   .gallery__item {
+    position: relative;
     margin-bottom: 0;
     border-bottom: 80px;
     border-color: $form-gray;
@@ -157,6 +158,7 @@
 
   .gallery__item-box p {
     margin: 0 0 -22px;
+    z-index: 2;
   }
 
   .gallery__item-box .gallery__item-likes {
@@ -180,6 +182,24 @@
   .gallery__item-caption {
     margin-bottom: 4px;
     margin-left: 20px;
+    z-index: 2;
+  }
+
+  .gallery__item-shadow {
+    position: absolute;
+    top: 303px;
+    min-height: 84px;
+    width: 100%;
+    background-color: $form-gray;
+    z-index: -1;
+  }
+
+  .gallery__item--road .gallery__item-shadow {
+    background-color: $gray-shadow;
+  }
+
+  .gallery__item--sunset .gallery__item-shadow {
+    top: 418px;
   }
 }
 
@@ -270,9 +290,15 @@
     width: 100%;
     background-color: $basic-black;
     opacity: 30%;
+    z-index: 1;
   }
 
   .gallery__item--sunset .gallery__item-shadow {
     top: 343px;
+  }
+
+  .gallery__item--road .gallery__item-shadow {
+    background-color: $basic-black;
+    opacity: 30%;
   }
 }
