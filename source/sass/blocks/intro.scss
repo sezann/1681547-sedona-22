@@ -6,6 +6,7 @@
   background-image: url("../img/index/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 57% -5px;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index/back-mobile@2x.jpg");
@@ -82,6 +83,10 @@
 
 .intro__text--form {
   margin-bottom: -6px;
+}
+
+.intro__text--catalog {
+  margin-bottom: 50px;
 }
 
 .intro__subtitle br {
@@ -175,8 +180,12 @@
     margin-top: 44px;
   }
 
-  .intro__text {
-    margin-bottom: 54px;
+  .intro__text--catalog {
+    margin-bottom: 76px;
+  }
+
+  .intro__text--main {
+    margin-bottom: 55px;
   }
 
   .intro__subtitle br {
@@ -210,7 +219,7 @@
     margin-top: 101px;
   }
 
-  .intro__inner .intro__image--inner::after {
+  .intro--inner .intro__image--inner::after {
     top: 246px;
     left: 0;
     background-image: url("../img/optimized-svg/intro-triangle-desktop.svg");
@@ -238,6 +247,6 @@
   }
 
   .intro__text--catalog {
-    margin-bottom: 55px;
+    margin-bottom: 77px;
   }
 }

@@ -13,6 +13,7 @@
   text-align: center;
   background-color: $lightblue;
   padding: 14px;
+  margin-right: 5px;
 
   &:hover {
     background-color: $lightblue-hover;
@@ -25,9 +26,4 @@
   &:active .social__link-icon {
     opacity: 0.3;
   }
-}
-
-.social__link--facebook {
-  margin-left: 5px;
-  margin-right: 5px;
 }

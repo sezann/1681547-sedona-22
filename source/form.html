@@ -10,7 +10,6 @@
     <link rel="apple-touch-icon" href="img/favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
@@ -25,12 +24,12 @@
             <img src="img/optimized-svg/logo-mobile.svg" width="102" height="84" alt="Логотип города Седона">
           </picture>
         </a>
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Главная</a></li>
             <li class="main-nav__item"><a href="catalog.html">Фото и видео</a></li>
-            <li class="main-nav__item main-nav__item--current"><a href="#">Форма отзыва</a></li>
+            <li class="main-nav__item main-nav__item--current"><a>Форма отзыва</a></li>
             <li class="main-nav__item"><a href="#">Html Academy</a></li>
           </ul>
         </nav>
@@ -39,7 +38,7 @@
       <main class="page-main">
         <h1 class="visually-hidden">Оставьте свой отзыв о гостиницах и достопримечательностях Седоны</h1>
 
-        <section class="intro intro__inner">
+        <section class="intro intro--inner">
           <h2 class="visually-hidden">Форма для отзыва</h2>
           <div class="intro__image intro__image--inner">
             <picture>
@@ -71,12 +70,12 @@
 
             <fieldset class="form__field form__field--info ">
               <h3 class="form__subtitle form__subtitle--info">Контактная информация:</h3>
-              <div class="form__field-box">
-              <p class="form__field-box--phone">
-                <label for="form__phone"><span class="form__phone--contact">Контактный</span> телефон*:</label>
+              <div class="form__box">
+              <p class="form__box form__box--phone">
+                <label for="form__phone"><span class="form__box form__box--contact">Контактный</span> телефон*:</label>
                 <input id ="form__phone" class="form__input form__input--phone" type="tel" name="phone" placeholder="Введите телефон">
               </p>
-              <p class="form__field-box--email">
+              <p class="form__box form__box--email">
                 <label for="form__email">Электронная почта*:</label>
                 <input id="form__email" class="form__input form__input--email" type="email" name="email" placeholder="Введите e-mail">
               </p>
@@ -87,15 +86,15 @@
               <h3 class="form__subtitle form__subtitle--impression">Ваше общее впечатление:</h3>
               <ul class="form__list">
                 <li class="form__item form__item--impression">
-                  <input id="positive-impression" class="visually-hidden form__input--impression" type="radio" name="impression" value="positive" checked>
+                  <input id="positive-impression" class="visually-hidden form__input form__input--impression" type="radio" name="impression" value="positive" checked>
                   <label for="positive-impression">Скорее положительное </label>
                 </li>
                 <li class="form__item form__item--negative-impression">
-                  <input id="negative-impression" class="visually-hidden form__input--impression" type="radio" name="impression" value="negative">
+                  <input id="negative-impression" class="visually-hidden form__input form__input--impression" type="radio" name="impression" value="negative">
                   <label for="negative-impression">Скорее отрицательное</label>
                 </li>
                 <li class="form__item form__item--impression">
-                  <input id="unsure-impression" class="visually-hidden form__input--impression" type="radio" name="impression" value="unsure">
+                  <input id="unsure-impression" class="visually-hidden form__input form__input--impression" type="radio" name="impression" value="unsure">
                   <label for="unsure-impression">Затрудняюсь ответить</label>
                 </li>
               </ul>
@@ -105,19 +104,19 @@
               <h3 class="form__subtitle form__subtitle--sights">Посещенные<br> достопримечательности:</h3>
               <ul class="form__list form__list--sights">
                 <li class="form__item form__item--bridge">
-                  <input id="devil-bridge" class="visually-hidden form__input--sights" type="checkbox" name="bridge" checked>
+                  <input id="devil-bridge" class="visually-hidden form__input form__input--sights" type="checkbox" name="bridge" checked>
                   <label for="devil-bridge">Мост Дьявола</label>
                 </li>
                 <li class="form__item form__item--bell">
-                  <input id="mountain-bell" class="visually-hidden form__input--sights" type="checkbox" name="mountain" checked>
+                  <input id="mountain-bell" class="visually-hidden form__input form__input--sights" type="checkbox" name="mountain" checked>
                   <label for="mountain-bell">Гора-Колокол</label>
                 </li>
                 <li class="form__item form__item--park">
-                  <input id="slide-park" class="visually-hidden form__input--sights" type="checkbox" name="park" checked>
+                  <input id="slide-park" class="visually-hidden form__input form__input--sights" type="checkbox" name="park" checked>
                   <label for="slide-park">Слайд-парк</label>
                 </li>
                 <li class="form__item form__item--rocks">
-                  <input id="red-rocks" class="visually-hidden form__input--sights" type="checkbox" name="rock">
+                  <input id="red-rocks" class="visually-hidden form__input form__input--sights" type="checkbox" name="rock">
                   <label for="red-rocks">Красные скалы</label>
                 </li>
               </ul>
@@ -125,7 +124,7 @@
 
             <fieldset class="form__field form__field--emotions">
               <h3 class="form__subtitle">Опишите свои эмоции:</h3>
-              <textarea class="form__input form__input--emotions" type="text" rows="5" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__input form__input--emotions" rows="5" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="form__button button" type="submit">Отправить отзыв</button>
             <p class="form__legend">* &mdash; обязательные поля</p>

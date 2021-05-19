@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 }
 
 .video__subtitle {
   font-size: 18px;
   line-height: 26px;
-  margin: 11px 0 33px;
+  margin: 9px 0 31px;
 }
 
 .video__intro {
@@ -89,7 +89,7 @@
 
 .video__toggle {
   position: absolute;
-  transform: translateX(57px) translateY(19px);
+  transform: translateX(-83px) translateY(19px);
   width: 10px;
   height: 10px;
   padding: 0;
@@ -123,7 +123,7 @@
   .video__subtitle {
     font-size: 30px;
     line-height: 26px;
-    margin: 35px 0 36px;
+    margin: -4px 0 36px;
   }
 
   .video__intro {
@@ -150,7 +150,7 @@
 
   .video__control {
     position: absolute;
-    transform: translateY(628px);
+    transform: translateY(590px);
     justify-content: space-around;
     width: 648px;
     background-color: $basic-black;
@@ -170,7 +170,7 @@
 
   .video__toggle {
     position: absolute;
-    transform: translateX(87px) translateY(-7px);
+    transform: translateX(-106px) translateY(-7px);
     width: 10px;
     height: 10px;
     padding: 0;
@@ -245,6 +245,10 @@
 
   .video__scale {
     width: 540px;
+  }
+
+  .video__toggle {
+    transform: translateX(-184px) translateY(-7px);
   }
 
   .video__control path {

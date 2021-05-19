@@ -161,7 +161,7 @@
   position: relative;
 }
 
-.form__field-box--phone::after {
+.form__box--phone::after {
   content: "";
   position: absolute;
   top: 100px;
@@ -174,7 +174,7 @@
   background-position: 19px 19px;
 }
 
-.form__field-box--email::after {
+.form__box--email::after {
   content: "";
   position: absolute;
   top: 202px;
@@ -386,12 +386,12 @@
     display: none;
   }
 
-  .form__field-box--phone::after {
+  .form__box--phone::after {
     top: 105px;
     left: 589px;
   }
 
-  .form__field-box--email::after {
+  .form__box--email::after {
     top: 218px;
     left: 586px;
   }
@@ -450,25 +450,28 @@
 @media (min-width: $desktop-width) {
   .form__list--sights {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .form__field-box {
+  .form__box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .form__field-box p {
+  .form__box p {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     white-space: nowrap;
   }
 
-  .form__field-box--phone {
+  .form__box--phone {
     margin-top: 34px;
   }
 
-  .form__field-box--email {
+  .form__box--email {
     margin-top: 43px;
   }
 
@@ -489,7 +492,7 @@
     margin-top: 25px;
   }
 
-  .form__phone--contact {
+  .form__box--contact {
     display: none;
   }
 
@@ -519,12 +522,12 @@
     margin-left: 0;
   }
 
-  .form__field-box--phone::after {
+  .form__box--phone::after {
     top: 120px;
     left: 341px;
   }
 
-  .form__field-box--email::after {
+  .form__box--email::after {
     top: 120px;
     left: 899px;
   }
