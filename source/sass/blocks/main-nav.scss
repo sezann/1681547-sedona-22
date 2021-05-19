@@ -5,7 +5,6 @@
   font-weight: normal;
   width: auto;
   min-height: 55px;
-  background-color: $basic-white;
   padding-bottom: 56px;
 }
 
@@ -13,18 +12,22 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: $basic-white;
 }
 
 @media (max-width: $mobile-only) {
   .main-nav li {
     min-height: 56px;
     text-align: center;
+    background-color: $lightblue;
     border-top: 1px solid $lightblue-hover;
     border-bottom: 1px solid $lightblue-focus;
   }
 
   .main-nav__item a {
     color: $basic-white;
+    display: block;
+    width: initial;
   }
 
   .main-nav__item:hover {
@@ -52,7 +55,7 @@
     display: block;
     width: 56px;
     height: 55px;
-    background-color: $basic-white;
+    background-color: transparent;
     cursor: pointer;
     border: none;
 
@@ -89,7 +92,7 @@
   .main-nav--opened .main-nav__toggle {
     top: 0;
     right: 0;
-    background-color: $lightblue;
+    background-color: transparent;
 
     &::before,
     &::after {
